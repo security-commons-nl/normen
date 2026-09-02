@@ -35,20 +35,21 @@ we wel en niet opnemen.
 
 EUPL-1.2, zie [LICENSE](LICENSE), voor wat in deze repo zelf is gemaakt: het schema, de indeling, de
 scripts, de samenvattingen bij Wpg en AVG en de beleidsdomeinen. **Per kader staat de licentie van de
-bron in het bestand zelf**, onder `bron.licentie`. BIO 2.0 is een publicatie van het CIP voor de
-Nederlandse overheid; NIST CSF 2.0 staat in het publieke domein; de AVG is wettekst; het
+bron in het bestand zelf**, onder `bron.licentie`. BIO 2.0 is een publicatie van het CIP onder
+CC BY-NC-SA 4.0, en daarom staan hier alleen de nummers, titels en thema's; NIST CSF 2.0 staat in het publieke domein; de AVG is wettekst; het
 Wpg-toetsingskader is van NOREA en staat hier alleen als eigen samenvatting.
 
-**Wat hier bewust niet in staat: de tekst van ISO 27002.** BIO 2.0 volgt de nummering van ISO 27002:2022,
-en de bron waaruit deze dataset is overgenomen droeg per maatregel ook de ISO-tekst. Die is van NEN/ISO
-en publiceren wij niet. Een test blokkeert als het veld ooit terugkomt. Wie de ISO-tekst nodig heeft,
-koopt de norm; wie de BIO nodig heeft, vindt hem hier.
+**Wat hier bewust niet in staat: normtekst.** BIO 2.0 volgt de nummering van ISO 27002:2022, en de bron
+waaruit deze dataset is overgenomen droeg per maatregel de ISO-tekst en de tekst van de overheidsmaatregel.
+De eerste is van NEN/ISO, de tweede van het CIP onder CC BY-NC-SA 4.0; geen van beide laat herdistributie
+onder EUPL toe. Een test blokkeert als een van die velden ooit terugkomt. Wie de tekst nodig heeft, gaat
+naar de bron; het nummer hier is ook het nummer daar.
 
 ## Wat erin zit
 
 | Bestand | Kader | Records | Wat een record draagt |
 |---|---|---|---|
-| `bio2.json` | BIO 2.0 (CIP, v1.3 definitief) | 148 overheidsmaatregelen | nummer (ook het ISO-nummer), titel, thema, de tekst van de overheidsmaatregel, het risico |
+| `bio2.json` | BIO 2.0 (CIP, v1.3 definitief) | 148 overheidsmaatregelen | nummer (ook het ISO-nummer), titel, thema; geen tekst |
 | `bio2-domeinen.json` | BIO 2.0, beleidsdomeinen | 15 domeinen | id, titel, omschrijving, de maatregelen die in dat beleidsdocument horen |
 | `nist-csf.json` | NIST CSF 2.0 | 106 subcategorieën | id, uitkomst (Engels, zoals NIST hem formuleert), functie en categorie |
 | `wpg.json` | Wpg-toetsingskader (NOREA) | 36 maatregelen | id, titel, artikel, thema, kern in eigen woorden |

@@ -49,9 +49,7 @@
     "titel": {"type": "string", "minLength": 1},
     "thema": {"type": "string"},
     "artikel": {"type": "string"},
-    "kern": {"type": "string"},
-    "overheidsmaatregel": {"type": "string"},
-    "risico": {"type": "string"}
+    "kern": {"type": "string"}
    },
    "additionalProperties": false
   },

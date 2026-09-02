@@ -4,12 +4,12 @@ Gegenereerd door `tools/controleer.py` uit de JSON-bestanden in deze repo; wijzi
 
 ## BIO 2.0 (`bio2.json`)
 
-De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, genummerd volgens de structuur van ISO 27002:2022 (5.01.01 hoort bij ISO-maatregel 5.1). Per maatregel het nummer, de titel, het thema (de IV-standaard), de tekst van de overheidsmaatregel en het risico dat de maatregel adresseert. De tekst van de onderliggende ISO-maatregel staat er niet bij: die is auteursrechtelijk beschermd en hoort bij NEN/ISO.
+De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, genummerd volgens de structuur van ISO 27002:2022 (5.01.01 hoort bij ISO-maatregel 5.1). Per maatregel het nummer, de titel en het thema (de IV-standaard). De tekst van de overheidsmaatregel staat er niet bij: het CIP publiceert onder CC BY-NC-SA 4.0, en de ISO-tekst eronder is van NEN/ISO. Wie de tekst nodig heeft, gaat naar de bron; het nummer hier is ook het nummer daar.
 
 - **Bron:** Centrum Informatiebeveiliging en Privacybescherming (CIP), BIO2 v1.3 definitief - 9 januari 2026, [link](https://www.cip-overheid.nl/)
-- **Licentie van de bron:** Publicatie van het CIP voor de Nederlandse overheid, vrij te gebruiken; ISO-tekst niet opgenomen
+- **Licentie van de bron:** CC BY-NC-SA 4.0 (CIP). Daarom staan hier alleen nummers, titels en thema's; de tekst van de overheidsmaatregelen en de ISO-tekst zijn niet opgenomen
 - **Opgehaald:** 2026-09-02
-- **Records:** 148 · **Vingerafdruk:** `371f6d452db3ace5`
+- **Records:** 148 · **Vingerafdruk:** `143d785a8931d19f`
 
 | Id | Titel | Thema |
 |---|---|---|

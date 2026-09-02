@@ -37,9 +37,9 @@ KOP_VERPLICHT = ("kader", "titel", "versie", "toelichting", "bron", "vingerafdru
 BRON_VERPLICHT = ("naam", "versie", "licentie", "opgehaald")
 RECORD_VERPLICHT = ("id", "titel")
 
-# Velden die nooit in een kader mogen staan: normtekst van een auteursrechthebbende die niet de
-# overheid is. Een test in tests/ bewaakt dit ook; hier staat het zodat --check het zonder pip ziet.
-VERBODEN_VELDEN = {"iso_maatregel", "iso_tekst", "iso"}
+# Velden die nooit in een kader mogen staan: normtekst waarvan de licentie herdistributie niet toelaat
+# (ISO: NEN/ISO; de BIO-tekst: CIP, CC BY-NC-SA 4.0). Een test in tests/ bewaakt dit ook; hier staat het zodat --check het zonder pip ziet.
+VERBODEN_VELDEN = {"iso_maatregel", "iso_tekst", "iso", "overheidsmaatregel", "risico"}
 
 
 def vingerafdruk(records: list[dict]) -> str:

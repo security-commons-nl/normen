@@ -28,9 +28,10 @@ VERWACHT = {
 }
 
 # Per kader de velden die een record mag dragen. Alles daarbuiten is een fout, en `iso_maatregel`
-# in het bijzonder: dat is de ISO 27002-tekst en die publiceren wij niet.
+# in het bijzonder: ISO-tekst (NEN/ISO) en de tekst van de overheidsmaatregel (CIP, CC BY-NC-SA)
+# publiceren wij niet.
 VELDEN = {
-    "bio2.json": {"id", "titel", "thema", "overheidsmaatregel", "risico"},
+    "bio2.json": {"id", "titel", "thema"},
     "nist-csf.json": {"id", "titel", "thema"},
     "wpg.json": {"id", "titel", "artikel", "thema", "kern"},
     "avg.json": {"id", "titel", "artikel", "thema", "kern"},
@@ -80,7 +81,9 @@ def test_geen_iso_tekst(kaders):
             assert not extra, f"{naam} {record['id']}: onverwachte velden {sorted(extra)}"
     # Het woord dat de ISO-tekst in de cisochat-dataset markeerde mag nergens meer voorkomen.
     for naam in VERWACHT:
-        assert "iso_maatregel" not in (ROOT / naam).read_text(encoding="utf-8"), naam
+        tekst = (ROOT / naam).read_text(encoding="utf-8")
+        for verboden in ("iso_maatregel", "overheidsmaatregel", "risico"):
+            assert f'"{verboden}"' not in tekst, f"{naam}: veld {verboden}"
 
 
 def test_vingerafdruk_klopt(kaders):
