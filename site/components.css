@@ -1,0 +1,221 @@
+/* Components: hero/lead, chapter headers, cards, badges, steps, tiles,
+   callouts, advice boxes and query cards. */
+
+/* Lead paragraph (first paragraph after a chapter title) */
+.lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--grijs);
+  max-width: 44rem;
+  margin: 0 0 1.5rem;
+}
+
+#start h1 { font-size: 2.5rem; max-width: 40rem; }
+#start .lead { font-size: 1.25rem; }
+
+/* Chapter header with number monogram */
+.chapter-head { display: flex; align-items: center; gap: 1rem; margin: 0.5rem 0 1.25rem; }
+.chapter-head h1 { margin: 0; }
+.chapter-num {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--oranje);
+  border: 2px solid var(--oranje);
+  border-radius: 8px;
+  padding: 0.25rem 0.6rem;
+  min-width: 2.9rem;
+  text-align: center;
+}
+
+/* Chapter cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.2rem 1rem;
+  background: #ffffff;
+  border: 1px solid var(--lijn);
+  border-top: 3px solid var(--blauw);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  animation: card-in 0.4s ease-out both;
+  animation-delay: calc(var(--d, 0) * 60ms);
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s;
+}
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(13, 43, 77, 0.12);
+  border-top-color: var(--oranje);
+}
+
+.card-num {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blauw-licht);
+  -webkit-text-stroke: 1.5px var(--blauw);
+  line-height: 1;
+}
+
+.card-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; color: var(--blauw-donker); }
+.card-desc { font-size: 0.875rem; color: var(--grijs); flex-grow: 1; }
+.card-badges { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+
+.card::after {
+  content: "→";
+  position: absolute;
+  right: 1rem;
+  bottom: 0.8rem;
+  color: var(--oranje);
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.card:hover::after { opacity: 1; transform: translateX(2px); }
+
+/* Badges */
+.badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.badge-bestuur { background: var(--blauw); color: #ffffff; }
+.badge-techniek { background: #ffffff; color: var(--oranje); border: 1px solid var(--oranje); }
+
+/* Step path */
+.steps { list-style: none; counter-reset: stap; margin: 1.25rem 0; padding: 0; position: relative; }
+.steps li {
+  counter-increment: stap;
+  position: relative;
+  padding: 0 0 1.4rem 3.4rem;
+  max-width: 44rem;
+}
+.steps li::before {
+  content: counter(stap);
+  position: absolute;
+  left: 0;
+  top: -0.1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--blauw);
+  color: #ffffff;
+  font-family: var(--serif);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 1.05rem;
+  top: 2.3rem;
+  bottom: 0.1rem;
+  width: 2px;
+  background: var(--blauw-licht);
+}
+.steps li:last-child { padding-bottom: 0; }
+
+/* Principle tiles */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+}
+.tile {
+  background: var(--vlak);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  border-left: 4px solid var(--oranje);
+  animation: card-in 0.4s ease-out both;
+  animation-delay: calc(var(--d, 0) * 80ms);
+}
+.tile-num { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--oranje); }
+.tile h3 { margin: 0.2rem 0 0.4rem; }
+.tile p { margin: 0; font-size: 0.9rem; color: var(--grijs); }
+
+/* Callouts (from blockquotes) */
+.callout {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.2rem;
+  background: var(--blauw-licht);
+  border-left: 4px solid var(--blauw);
+  border-radius: 0 8px 8px 0;
+  max-width: 46rem;
+}
+.callout p { margin: 0.35rem 0; }
+
+/* Advice boxes */
+.advies {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.2rem 1rem;
+  border: 1px solid var(--oranje);
+  border-left-width: 4px;
+  border-radius: 0 8px 8px 0;
+  background: #fff8f0;
+  max-width: 46rem;
+}
+.advies-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--oranje);
+}
+.advies p { margin: 0.3rem 0 0; }
+
+/* Query cards */
+.query {
+  margin: 1.5rem 0;
+  border: 1px solid var(--lijn);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  animation: card-in 0.4s ease-out both;
+  animation-delay: calc(var(--d, 0) * 60ms);
+}
+.query h2 { margin: 0; font-size: 1.05rem; }
+.query h2 code { background: none; color: var(--blauw-donker); font-size: 1rem; }
+.query-doel { color: var(--grijs); font-size: 0.9rem; margin: 0.4rem 0 0.6rem; }
+.query details summary {
+  cursor: pointer;
+  color: var(--blauw);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.query details summary:hover { color: var(--oranje); }
+
+.codewrap { position: relative; margin-top: 0.6rem; }
+.copy {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid rgba(230, 237, 245, 0.4);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e6edf5;
+  cursor: pointer;
+}
+.copy:hover { background: rgba(255, 255, 255, 0.18); }

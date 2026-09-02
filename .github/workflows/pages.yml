@@ -1,0 +1,21 @@
+name: Build and deploy Pages
+
+# De leesbare versie: README en kaders.md via de gedeelde documentatiebuild van de organisatie.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  pages:
+    uses: security-commons-nl/.github/.github/workflows/pages-docs.yml@main

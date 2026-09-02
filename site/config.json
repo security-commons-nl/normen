@@ -1,0 +1,10 @@
+{
+  "repoUrl": "https://github.com/security-commons-nl/normen",
+  "title": "normen · Security Commons NL",
+  "description": "De normbronnen van de commons als dataset: BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader en de AVG, in één schema met een vingerafdruk. Zonder ISO-tekst.",
+  "siteTitle": "normen",
+  "tabs": [
+    { "file": "README.md", "id": "start", "label": "Start" },
+    { "file": "kaders.md", "id": "kaders", "label": "Kaders", "title": "Wat er in de kaders zit" }
+  ]
+}

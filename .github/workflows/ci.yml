@@ -1,0 +1,31 @@
+name: CI
+
+# De dataset is alleen bruikbaar als hij klopt en als een wijziging opvalt. Twee stappen: het
+# stdlib-script dat de vingerafdrukken herrekent en kaders.md vergelijkt, en de tests die het volledige
+# JSON Schema valideren en de aantallen en de herkomst bewaken.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  kaders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Installeren
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest jsonschema
+      - name: Vingerafdrukken en kaders.md kloppen
+        run: python tools/controleer.py --check
+      - name: Tests
+        run: python -m pytest tests/ -v

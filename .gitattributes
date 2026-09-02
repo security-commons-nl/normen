@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Werkboeken zijn binair; regeleindes omzetten zou ze slopen en hun vingerafdruk veranderen.
+*.xlsx binary

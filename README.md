@@ -1,0 +1,71 @@
+# normen
+
+De normbronnen van Security Commons NL als dataset: BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader voor
+boa-organisaties en de AVG, elk als één JSON-bestand in één schema, met herkomst en een vingerafdruk.
+Voor iedereen die een norm in een tool wil laden zonder hem eerst uit een PDF te moeten halen.
+
+Status: in gebruik. De aanvalspaden en applicatiecheck lezen hieruit; tests en CI bewaken de inhoud.
+
+## Voor wie
+
+Wie een instrument bouwt dat naar een norm verwijst, en wie een norm wil doorzoeken of hergebruiken
+zonder de opmaak van de uitgever. CISO's, ISO's, privacy officers en bouwers bij publieke organisaties.
+
+## Snel starten
+
+1. Kies een kader: [`bio2.json`](bio2.json), [`bio2-domeinen.json`](bio2-domeinen.json),
+   [`nist-csf.json`](nist-csf.json), [`wpg.json`](wpg.json) of [`avg.json`](avg.json). Wat erin zit staat
+   in [kaders.md](kaders.md), of leesbaar op
+   [security-commons-nl.github.io/normen](https://security-commons-nl.github.io/normen/).
+2. Elk bestand heeft dezelfde kop: `kader`, `titel`, `versie`, `toelichting`, `bron` (naam, versie,
+   url, licentie, datum van ophalen) en `vingerafdruk`, en daaronder de lijst `maatregelen` (of
+   `domeinen`). Het schema staat in [`schema.json`](schema.json).
+3. Gebruik je een kader in een eigen repo, kopieer het dan en bewaar de `vingerafdruk` erbij. Zo zie
+   je wanneer je kopie achterloopt; de repo's van de commons doen dat met een `tools/haal_normen.py`
+   dat in CI `--check` draait.
+
+## Bijdragen
+
+Zie de [CONTRIBUTING](https://github.com/security-commons-nl/.github/blob/main/CONTRIBUTING.md) van
+de organisatie: daar staat per project een formulier, ook zonder Git-ervaring. Een issue of discussion
+is een volwaardige bijdrage. Voor deze repo: zie [CONTRIBUTING.md](CONTRIBUTING.md), vooral over wat
+we wel en niet opnemen.
+
+## Licentie
+
+EUPL-1.2, zie [LICENSE](LICENSE), voor wat in deze repo zelf is gemaakt: het schema, de indeling, de
+scripts, de samenvattingen bij Wpg en AVG en de beleidsdomeinen. **Per kader staat de licentie van de
+bron in het bestand zelf**, onder `bron.licentie`. BIO 2.0 is een publicatie van het CIP voor de
+Nederlandse overheid; NIST CSF 2.0 staat in het publieke domein; de AVG is wettekst; het
+Wpg-toetsingskader is van NOREA en staat hier alleen als eigen samenvatting.
+
+**Wat hier bewust niet in staat: de tekst van ISO 27002.** BIO 2.0 volgt de nummering van ISO 27002:2022,
+en de bron waaruit deze dataset is overgenomen droeg per maatregel ook de ISO-tekst. Die is van NEN/ISO
+en publiceren wij niet. Een test blokkeert als het veld ooit terugkomt. Wie de ISO-tekst nodig heeft,
+koopt de norm; wie de BIO nodig heeft, vindt hem hier.
+
+## Wat erin zit
+
+| Bestand | Kader | Records | Wat een record draagt |
+|---|---|---|---|
+| `bio2.json` | BIO 2.0 (CIP, v1.3 definitief) | 148 overheidsmaatregelen | nummer (ook het ISO-nummer), titel, thema, de tekst van de overheidsmaatregel, het risico |
+| `bio2-domeinen.json` | BIO 2.0, beleidsdomeinen | 15 domeinen | id, titel, omschrijving, de maatregelen die in dat beleidsdocument horen |
+| `nist-csf.json` | NIST CSF 2.0 | 106 subcategorieën | id, uitkomst (Engels, zoals NIST hem formuleert), functie en categorie |
+| `wpg.json` | Wpg-toetsingskader (NOREA) | 36 maatregelen | id, titel, artikel, thema, kern in eigen woorden |
+| `avg.json` | AVG | 32 artikelen | id, titel, artikel, thema, kern in eigen woorden |
+
+Wat er **niet** in zit: de mappingen tussen kaders en de aanvalspaden. Die horen bij de barrières en
+staan in [`aanvalspaden/mappingen/`](https://github.com/security-commons-nl/aanvalspaden). Deze repo
+levert de bronnen; de aanvalspaden leggen de verbanden.
+
+## Onderhoud
+
+- `python tools/controleer.py` valideert alle kaders, herrekent de vingerafdrukken en schrijft
+  `kaders.md`. In CI draait hij met `--check` en wordt rood als iemand in de JSON heeft gewerkt zonder
+  hem te draaien.
+- `python -m pytest tests/` toetst het schema, de aantallen, de unieke ids, de afwezigheid van
+  ISO-tekst en of `bio2.json` nog gelijk is aan de overname.
+- Een nieuwe versie van een kader komt binnen via de generator van dat kader in `tools/`
+  (`genereer_nist.py` leest de CSF-export van NIST). Voor BIO 2.0 is de eerste versie eenmalig
+  overgenomen uit `cisochat` met `tools/overname.py`; dat script documenteert de herkomst en hoeft niet
+  opnieuw te draaien.

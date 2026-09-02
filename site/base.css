@@ -1,0 +1,170 @@
+/* Base: calm editorial style in Dutch-government colours.
+   Serif display headings (report feel), sans body, no external resources. */
+:root {
+  --blauw: #154273;
+  --blauw-donker: #0d2b4d;
+  --blauw-licht: #e8f0f7;
+  --oranje: #e17000;
+  --inkt: #1c1c1c;
+  --grijs: #5a5a5a;
+  --lijn: #dcdfe3;
+  --vlak: #f4f6f9;
+  --serif: Cambria, Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", system-ui, Tahoma, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--inkt);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.inner { max-width: 56rem; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid var(--lijn);
+  box-shadow: 0 1px 0 rgba(13, 43, 77, 0.04);
+}
+
+.site-header::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blauw) 0 82%, var(--oranje) 82% 100%);
+}
+
+.masthead { display: flex; align-items: baseline; gap: 0.75rem; padding-top: 0.85rem; }
+
+.site-kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grijs);
+}
+
+.site-title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blauw);
+}
+
+/* Tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 0.15rem; margin-top: 0.35rem; }
+
+.tab {
+  appearance: none;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--grijs);
+  padding: 0.45rem 0.65rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.tab:hover { color: var(--blauw); background: var(--blauw-licht); }
+
+.tab[aria-selected="true"] {
+  color: var(--blauw);
+  font-weight: 700;
+  border-bottom-color: var(--oranje);
+}
+
+/* Panels: without JavaScript all sections stay visible, stacked. */
+body.tabbed .tab-panel { display: none; }
+body.tabbed .tab-panel.actief { display: block; animation: panel-in 0.25s ease-out; }
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+main { padding: 2rem 1.5rem 3.5rem; }
+
+.tab-panel + .tab-panel { border-top: 1px solid var(--lijn); margin-top: 2.5rem; padding-top: 1.5rem; }
+body.tabbed .tab-panel + .tab-panel { border-top: 0; margin-top: 0; padding-top: 0; }
+
+/* Typography */
+h1, h2, h3 { font-family: var(--serif); line-height: 1.25; }
+h1 { color: var(--blauw-donker); font-size: 2rem; margin: 0.5rem 0 1rem; }
+h2 { color: var(--blauw); font-size: 1.45rem; margin: 2.25rem 0 0.6rem; }
+h3 { color: var(--blauw); font-size: 1.15rem; margin: 1.6rem 0 0.5rem; }
+p, li { max-width: 46rem; }
+a { color: var(--blauw); text-underline-offset: 2px; }
+a:hover { color: var(--oranje); }
+strong { color: var(--blauw-donker); }
+
+/* Tables */
+.tablewrap { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--lijn); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+th, td { border-bottom: 1px solid var(--lijn); padding: 0.55rem 0.75rem; text-align: left; vertical-align: top; }
+td + td, th + th { border-left: 1px solid var(--lijn); }
+th {
+  background: var(--blauw);
+  color: #ffffff;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+tr:nth-child(even) td { background: var(--vlak); }
+tr:last-child td { border-bottom: 0; }
+
+/* Code */
+code {
+  font-family: ui-monospace, Consolas, "Cascadia Mono", monospace;
+  font-size: 0.875em;
+  background: var(--vlak);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--blauw-donker);
+  color: #e6edf5;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  line-height: 1.55;
+  font-size: 0.85rem;
+}
+pre code { background: none; color: inherit; padding: 0; }
+
+footer {
+  border-top: 1px solid var(--lijn);
+  padding: 1.25rem 1.5rem 2.5rem;
+  font-size: 0.85rem;
+  color: var(--grijs);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Print: show everything, drop interactive chrome. */
+@media print {
+  .site-header { position: static; }
+  .tabs, .copy { display: none; }
+  body.tabbed .tab-panel { display: block; }
+  .tab-panel { break-before: page; }
+  .tab-panel:first-of-type { break-before: auto; }
+  details { open: true; }
+  pre { background: #f4f6f9; color: #1c1c1c; }
+}
+
+/* Kruimelpad in de masthead (statuut B10). */
+.site-kicker a{color:inherit;text-decoration:none}
+.site-kicker a:hover{text-decoration:underline}
