@@ -9,24 +9,24 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 - **Bron:** Centrum Informatiebeveiliging en Privacybescherming (CIP), BIO2 v1.3 definitief - 9 januari 2026, [link](https://www.cip-overheid.nl/)
 - **Licentie van de bron:** CC BY-NC-SA 4.0 (CIP). Daarom staan hier alleen nummers, titels en thema's; de tekst van de overheidsmaatregelen en de ISO-tekst zijn niet opgenomen
 - **Opgehaald:** 2026-09-02
-- **Records:** 148 · **Vingerafdruk:** `143d785a8931d19f`
+- **Records:** 148 · **Vingerafdruk:** `1c0b27a8841e2854`
 
 | Id | Titel | Thema |
 |---|---|---|
 | 5.01.01 | Informatiebeveiligingsbeleid | IV-beleid |
 | 5.01.02 | Beleidsregels voor informatie beveiliging | IV-beleid |
-| 5.02.01 | Rollen en verantwoordelijkheden bij  informatiebeveiliging | IV-beleid |
-| 5.02.02 | Rollen en verantwoordelijkheden bij  informatiebeveiliging | IV-beleid |
+| 5.02.01 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |
+| 5.02.02 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |
 | 5.03.01 | Functiescheiding | IV-beleid |
 | 5.04.01 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
 | 5.04.02 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
 | 5.04.03 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
 | 5.05.01 | Contact met overheidsinstanties | IV-beleid |
-| 5.06.01 | Contact met speciale  belangengroepen | IV-beleid |
-| 5.07.01 | Informatie en analyses over  dreigingen | IV-beleid |
-| 5.08.01 | Informatiebeveiliging in  projectmanagement | Informatiebeveiliging binnen projecten |
-| 5.09.01 | Inventarisatie van informatie en  andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
-| 5.10.01 | Aanvaardbaar gebruik van informatie  en andere gerelateerde  bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
+| 5.06.01 | Contact met speciale belangengroepen | IV-beleid |
+| 5.07.01 | Informatie en analyses over dreigingen | IV-beleid |
+| 5.08.01 | Informatiebeveiliging in projectmanagement | Informatiebeveiliging binnen projecten |
+| 5.09.01 | Inventarisatie van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
+| 5.10.01 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
 | 5.11.01 | Retourneren van bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
 | 5.12.01 | Classificeren van informatie | Informatie classificatie |
 | 5.13.01 | Labelen van informatie | Informatie classificatie |
@@ -43,63 +43,63 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 5.17.03 | Authenticatie-informatie | Logische toegangsbeveiliging |
 | 5.18.01 | Toegangsrechten | Logische toegangsbeveiliging |
 | 5.18.02 | Toegangsrechten | Logische toegangsbeveiliging |
-| 5.19.01 | Informatiebeveiliging in  leveranciersrelaties | Leveranciersbeheer - Inkoop |
-| 5.20.01 | Adresseren van informatiebeveiliging  in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
-| 5.20.02 | Adresseren van informatiebeveiliging  in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
-| 5.20.03 | Adresseren van informatiebeveiliging  in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
-| 5.21.02 | Beheren van informatiebeveiliging in  de ICT-toeleveringsketen | Leveranciersbeheer - Inkoop |
-| 5.21.03 | Beheren van informatiebeveiliging in  de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
-| 5.21.04 | Beheren van informatiebeveiliging in  de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
-| 5.22.01 | Monitoren, beoordelen en het  beheren van wijzigingen van  leveranciersdiensten | Leveranciersbeheer - contractbeheer |
-| 5.22.02 | Monitoren, beoordelen en het  beheren van wijzigingen van  leveranciersdiensten | Leveranciersbeheer - contractbeheer |
-| 5.23.01 | Informatiebeveiliging voor het  gebruik van clouddiensten | Leveranciersbeheer - contractbeheer |
-| 5.24.01 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.02 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.03 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.04 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.05 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.06 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.07 | Plannen en voorbereiden van het  beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.25.01 | Beoordelen van en besluiten over  informatiebeveiligingsgebeurtenissen | Security Incident Management |
+| 5.19.01 | Informatiebeveiliging in leveranciersrelaties | Leveranciersbeheer - Inkoop |
+| 5.20.01 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.20.02 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.20.03 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.21.02 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - Inkoop |
+| 5.21.03 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
+| 5.21.04 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
+| 5.22.01 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer |
+| 5.22.02 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer |
+| 5.23.01 | Informatiebeveiliging voor het gebruik van clouddiensten | Leveranciersbeheer - contractbeheer |
+| 5.24.01 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.02 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.03 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.04 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.05 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.06 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.24.07 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.25.01 | Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen | Security Incident Management |
 | 5.26.01 | Reageren op informatiebeveiligings-incidenten | Security Incident Management |
-| 5.27.01 | Leren van  informatiebeveiligingsincidenten | Security Incident Management |
+| 5.27.01 | Leren van informatiebeveiligingsincidenten | Security Incident Management |
 | 5.27.02 | Verzamelen van bewijsmateriaal | Security Incident Management |
 | 5.28.01 | Verzamelen van bewijsmateriaal | Security Incident Management |
-| 5.29.01 | Informatiebeveiliging tijdens een  verstoring | Business Continuity & Disaster Recovery |
-| 5.30.01 | ICT-gereedheid voor  bedrijfscontinuïteit | Business Continuity & Disaster Recovery |
-| 5.30.02 | ICT-gereedheid voor  bedrijfscontinuïteit | Business Continuity & Disaster Recovery |
-| 5.31.01 | Wettelijke, statutaire, regelgevende  en contractuele eisen | IT-Compliance |
+| 5.29.01 | Informatiebeveiliging tijdens een verstoring | Business Continuity & Disaster Recovery |
+| 5.30.01 | ICT-gereedheid voor bedrijfscontinuïteit | Business Continuity & Disaster Recovery |
+| 5.30.02 | ICT-gereedheid voor bedrijfscontinuïteit | Business Continuity & Disaster Recovery |
+| 5.31.01 | Wettelijke, statutaire, regelgevende en contractuele eisen | IT-Compliance |
 | 5.32.01 | Intellectuele-eigendomsrechten | IT-Compliance |
 | 5.33.01 | Beschermen van registraties | IT-Compliance |
-| 5.34.01 | Privacy en bescherming van  persoonsgegevens | IT-Compliance |
-| 5.35.02 | Onafhankelijke beoordeling van  informatiebeveiliging | IV-beleid |
-| 5.36.01 | Naleving van beleid, regels en  normen voor informatiebeveiliging | IV-beleid |
+| 5.34.01 | Privacy en bescherming van persoonsgegevens | IT-Compliance |
+| 5.35.02 | Onafhankelijke beoordeling van informatiebeveiliging | IV-beleid |
+| 5.36.01 | Naleving van beleid, regels en normen voor informatiebeveiliging | IV-beleid |
 | 6.02.01 | Arbeidsovereenkomst | Screening, bewustzijn & opleiding |
-| 6.03.01 | Bewustwording van, opleiding en  training in informatiebeveiliging | Screening, bewustzijn & opleiding |
-| 6.03.02 | Bewustwording van, opleiding en  training in informatiebeveiliging | Screening, bewustzijn & opleiding |
-| 6.03.03 | Bewustwording van, opleiding en  training in informatiebeveiliging | Screening, bewustzijn & opleiding |
+| 6.03.01 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
+| 6.03.02 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
+| 6.03.03 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
 | 6.04.01 | Disciplinaire procedure | Screening, bewustzijn & opleiding |
-| 6.05.01 | Verantwoordelijkheden na  beëindiging of wijziging van het  dienstverband | Screening, bewustzijn & opleiding |
-| 6.06.01 | Vertrouwelijkheids- of  geheimhoudingsovereenkomsten | Screening, bewustzijn & opleiding |
+| 6.05.01 | Verantwoordelijkheden na beëindiging of wijziging van het dienstverband | Screening, bewustzijn & opleiding |
+| 6.06.01 | Vertrouwelijkheids- of geheimhoudingsovereenkomsten | Screening, bewustzijn & opleiding |
 | 6.07.01 | Werken op afstand | Logische toegangsbeveiliging |
 | 6.08.01 | Melden van informatiebeveiligings-gebeurtenissen | Security Incident Management |
 | 7.01.01 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |
 | 7.01.02 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |
 | 7.02.01 | Fysieke toegangsbeveiliging | Fysieke toegang & beveiliging |
-| 7.05.01 | Beschermen tegen fysieke en  omgevingsdreigingen | Fysieke toegang & beveiliging |
+| 7.05.01 | Beschermen tegen fysieke en omgevingsdreigingen | Fysieke toegang & beveiliging |
 | 7.06.01 | Werken in beveiligde zones | Bedrijfsmiddelenbeheer |
 | 7.07.01 | ‘Clear desk’ en ‘clear screen’ | IT-Compliance |
-| 7.08.01 | Plaatsen en beschermen van  apparatuur | Bedrijfsmiddelenbeheer |
-| 7.09.01 | Beveiligen van bedrijfsmiddelen  buiten het terrein | Bedrijfsmiddelenbeheer |
+| 7.08.01 | Plaatsen en beschermen van apparatuur | Bedrijfsmiddelenbeheer |
+| 7.09.01 | Beveiligen van bedrijfsmiddelen buiten het terrein | Bedrijfsmiddelenbeheer |
 | 7.10.01 | Opslagmedia | Afvoer en hergebruik gegevensdragers |
 | 7.10.02 | Opslagmedia | Afvoer en hergebruik gegevensdragers |
 | 7.10.03 | Opslagmedia | Afvoer en hergebruik gegevensdragers |
 | 7.11.01 | Nutsvoorzieningen | Bedrijfsmiddelenbeheer |
 | 7.12.01 | Beveiligen van bekabeling | Fysieke toegang & beveiliging |
 | 7.13.01 | Onderhoud van apparatuur | Bedrijfsmiddelenbeheer |
-| 7.14.01 | Veilig verwijderen of hergebruiken  van apparatuur | Afvoer en hergebruik gegevensdragers |
-| 8.01.01 | User endpoint devices' | Mobile Device Management |
-| 8.01.02 | User endpoint devices' | Mobile Device Management |
+| 7.14.01 | Veilig verwijderen of hergebruiken van apparatuur | Afvoer en hergebruik gegevensdragers |
+| 8.01.01 | User endpoint devices | Mobile Device Management |
+| 8.01.02 | User endpoint devices | Mobile Device Management |
 | 8.02.01 | Speciale toegangsrechten | Logische toegangsbeveiliging |
 | 8.03.01 | Beperking toegang tot informatie | Logische toegangsbeveiliging |
 | 8.03.02 | Beperking toegang tot informatie | Logische toegangsbeveiliging |
@@ -110,21 +110,21 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.07.02 | Bescherming tegen malware | Vulnerability & patchmanagement |
 | 8.07.03 | Bescherming tegen malware | Vulnerability & patchmanagement |
 | 8.07.04 | Bescherming tegen malware | Vulnerability & patchmanagement |
-| 8.08.01 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.02 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.03 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.04 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.05 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.06 | Beheer van technische  kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.01 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.02 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.03 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.04 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.05 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
+| 8.08.06 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
 | 8.09.01 | Configuratiebeheer | Vulnerability & patchmanagement |
 | 8.10.01 | Wissen van informatie | Afvoer en hergebruik gegevensdragers |
 | 8.11.01 | Maskeren van gegevens | IT-Compliance |
-| 8.12.01 | Voorkomen van gegevenslekken  (data leakage prevention) | IT-Compliance |
+| 8.12.01 | Voorkomen van gegevenslekken (data leakage prevention) | IT-Compliance |
 | 8.13.01 | Back-up van informatie | Back-up & Recovery |
 | 8.13.02 | Back-up van informatie | Back-up & Recovery |
 | 8.13.03 | Back-up van informatie | Back-up & Recovery |
 | 8.13.04 | Back-up van informatie | Back-up & Recovery |
-| 8.14.01 | Redundantie van  informatieverwerkende faciliteiten | Business Continuity & Disaster Recovery |
+| 8.14.01 | Redundantie van informatieverwerkende faciliteiten | Business Continuity & Disaster Recovery |
 | 8.15.01 | Logging | Logging & monitoring |
 | 8.15.02 | Logging | Logging & monitoring |
 | 8.15.03 | Logging | Logging & monitoring |
@@ -136,9 +136,9 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.16.03 | Monitoren van activiteiten | Logging & monitoring |
 | 8.16.04 | Monitoren van activiteiten | Logging & monitoring |
 | 8.17.01 | Kloksynchronisatie | IT-Compliance |
-| 8.18.01 | Gebruik van speciale  systeemhulpmiddelen | Logische toegangsbeveiliging |
-| 8.18.02 | Gebruik van speciale  systeemhulpmiddelen | Logische toegangsbeveiliging |
-| 8.19.01 | Installeren van software op  operationele systemen | Wijzigingsbeheer |
+| 8.18.01 | Gebruik van speciale systeemhulpmiddelen | Logische toegangsbeveiliging |
+| 8.18.02 | Gebruik van speciale systeemhulpmiddelen | Logische toegangsbeveiliging |
+| 8.19.01 | Installeren van software op operationele systemen | Wijzigingsbeheer |
 | 8.20.01 | Beveiliging netwerkcomponenten | Netwerkbeveiliging |
 | 8.20.02 | Beveiliging netwerkcomponenten | Netwerkbeveiliging |
 | 8.21.01 | Beveiliging van netwerkdiensten | Netwerkbeveiliging |
@@ -150,16 +150,16 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.24.01 | Gebruik van cryptografie | Cryptografie |
 | 8.25.01 | Beveiligen tijdens de ontwikkelcyclus | Secure Software Development |
 | 8.26.01 | Toepassingsbeveiligingseisen | Secure Software Development |
-| 8.27.01 | Veilige systeemarchitectuur en  technische uitgangspunten | Secure Software Development |
+| 8.27.01 | Veilige systeemarchitectuur en technische uitgangspunten | Secure Software Development |
 | 8.28.01 | Veilig coderen | Secure Software Development |
-| 8.29.01 | Testen van de beveiliging tijdens  ontwikkeling en acceptatie | Wijzigingsbeheer |
+| 8.29.01 | Testen van de beveiliging tijdens ontwikkeling en acceptatie | Wijzigingsbeheer |
 | 8.30.01 | Uitbestede systeemontwikkeling | Secure Software Development |
-| 8.31.01 | Scheiding van ontwikkel-, test- en  productieomgevingen | Wijzigingsbeheer |
-| 8.31.02 | Scheiding van ontwikkel-, test- en  productieomgevingen | Wijzigingsbeheer |
+| 8.31.01 | Scheiding van ontwikkel-, test- en productieomgevingen | Wijzigingsbeheer |
+| 8.31.02 | Scheiding van ontwikkel-, test- en productieomgevingen | Wijzigingsbeheer |
 | 8.32.01 | Wijzigingsbeheer | Wijzigingsbeheer |
 | 8.32.02 | Wijzigingsbeheer | Wijzigingsbeheer |
 | 8.33.01 | Testgegevens | Wijzigingsbeheer |
-| 8.34.01 | Bescherming van informatiesystemen  tijdens audits | IT-Compliance |
+| 8.34.01 | Bescherming van informatiesystemen tijdens audits | IT-Compliance |
 | 5.24.08 | Coordinated Vulnerability Disclosure |  |
 
 ## BIO 2.0, beleidsdomeinen (`bio2-domeinen.json`)

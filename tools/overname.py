@@ -48,6 +48,17 @@ LICENTIE_ALS_ONBEKEND = {
 }
 
 
+def schoon(tekst: str) -> str:
+    """Titels in de CIP-tabel dragen afbreekregels en soms een losse afsluitende apostrof.
+
+    "Rollen en verantwoordelijkheden bij \ninformatiebeveiliging" is in een tabel of op een pagina niet
+    te tonen. Dezelfde regel als genereer_bio2.py in aanvalspaden al toepaste: witruimte samenvouwen,
+    randen strippen, een eenzame apostrof aan het eind weg.
+    """
+    import re
+    return re.sub(r"\s+", " ", tekst).strip().rstrip("'")
+
+
 def commit_van(repo: pathlib.Path, bestand: str) -> str:
     """De laatste commit waarin het bestand in die repo is gewijzigd; 'onbekend' zonder git."""
     try:
@@ -77,8 +88,8 @@ def bio2() -> None:
         # CIP (CC BY-NC-SA 4.0) en gaan niet mee; wie de tekst wil, gaat naar de bron.
         maatregelen.append({
             "id": c["id"],
-            "titel": c["titel"].strip(),
-            "thema": c.get("iv_standaard", "").strip(),
+            "titel": schoon(c["titel"]),
+            "thema": schoon(c.get("iv_standaard", "")),
         })
 
     data = {
@@ -143,7 +154,7 @@ def bio2_domeinen() -> None:
             "herkomst": "eenmalig overgenomen uit security-commons-nl/cisochat, data/domeinen.json",
             "commit": commit_van(CISOCHAT, "data/domeinen.json"),
         },
-        "domeinen": [{"id": d["id"], "titel": d["titel"].strip(), "omschrijving": d["omschrijving"].strip(),
+        "domeinen": [{"id": d["id"], "titel": schoon(d["titel"]), "omschrijving": schoon(d["omschrijving"]),
                       "controls": list(d["controls"])} for d in oud["domeinen"]],
     }
     schrijf("bio2-domeinen.json", data)
