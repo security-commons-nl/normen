@@ -18,6 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
+      # De leesversie wordt gebouwd met de gedeelde build van de organisatie. Zonder deze checkout
+      # slaan de paginatests zichzelf over, en dan zou een dode link op de pagina ongemerkt blijven.
+      - uses: actions/checkout@v7
+        with:
+          repository: security-commons-nl/.github
+          path: .sitebuild
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: .sitebuild/package-lock.json
+      - run: npm ci --prefix .sitebuild
+
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"

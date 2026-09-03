@@ -11,6 +11,7 @@ dat niet meegaat, wijst naar GitHub in plaats van naar het niets.
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -22,9 +23,29 @@ DATASETS = ["bio2.json", "bio2-domeinen.json", "nist-csf.json", "wpg.json", "avg
             "schema.json"]
 
 
+def gedeelde_build() -> pathlib.Path | None:
+    """De gedeelde build woont in security-commons-nl/.github, niet meer in deze repo.
+
+    Lokaal staat die repo als buurmap; in CI wordt hij naast de workspace uitgecheckt in .sitebuild.
+    Staat hij nergens, dan kan deze test niets bouwen en slaat hij zichzelf over.
+    """
+    for kandidaat in (ROOT / ".sitebuild" / "site" / "build.mjs",
+                      ROOT.parent / ".github" / "site" / "build.mjs"):
+        if kandidaat.exists() and (kandidaat.parent.parent / "node_modules" / "marked").exists():
+            return kandidaat
+    return None
+
+
 @pytest.fixture(scope="module")
 def gebouwd() -> str:
-    subprocess.run(["node", "site/build.mjs"], cwd=ROOT, check=True, capture_output=True)
+    build = gedeelde_build()
+    if build is None:
+        pytest.skip("de gedeelde build uit .github staat niet naast deze repo (npm ci daar)")
+    omgeving = dict(os.environ, SITE_ROOT=str(ROOT))
+    uit = subprocess.run(["node", str(build)], cwd=build.parent.parent, env=omgeving,
+                         capture_output=True)
+    melding = uit.stdout.decode("utf-8", "replace") + uit.stderr.decode("utf-8", "replace")
+    assert uit.returncode == 0, melding
     return (ROOT / "dist" / "index.html").read_text(encoding="utf-8")
 
 
@@ -45,8 +66,9 @@ def test_datasets_staan_in_de_config():
 def test_geen_relatieve_link_zonder_bestand(gebouwd):
     """Een relatieve link mag alleen blijven staan als het bestand in dist ligt.
 
-    Alles wat niet meegaat, hoort naar GitHub te wijzen. Deze regel is de sluitregel in
-    site/build.mjs; zonder hem lopen verwijzingen naar bestanden in de repo dood op Pages.
+    Alles wat niet meegaat, hoort naar GitHub te wijzen. Die sluitregel staat in de gedeelde
+    build (security-commons-nl/.github, site/build.mjs); zonder hem lopen verwijzingen naar
+    bestanden in de repo dood op Pages.
     """
     relatief = [h for h in re.findall(r'href="([^"]+)"', gebouwd)
                 if not h.startswith(("http://", "https://", "#", "/", "mailto:"))]
