@@ -115,9 +115,15 @@ function rewriteLinks(html) {
   for (const t of TABS) {
     out = out.replaceAll(`href="${t.file}"`, `href="#${t.id}"`);
   }
-  return out
+  out = out
     .replace(/href="queries\/[^"]*"/g, 'href="#queries"')
     .replace(/href="LICENSE"/g, `href="${REPO_URL}/blob/main/LICENSE"`);
+  // Sluitregel: wat hierna nog relatief is, verwijst naar een bestand in de repo. Gaat dat bestand
+  // als asset mee naar dist, dan blijft de link relatief (dan is het een download op deze site);
+  // anders wijst hij naar GitHub. Zonder deze regel wees zo'n link naar een pad op Pages dat niet
+  // bestaat, en dat gaf een 404 zonder dat een test of de linkcheck het zag.
+  return out.replace(/href="(?!https?:|#|\/|mailto:)([^"]+)"/g, (heel, pad) =>
+    ASSETS.includes(pad) ? heel : `href="${REPO_URL}/blob/main/${pad}"`);
 }
 
 /**
