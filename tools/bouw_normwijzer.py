@@ -177,7 +177,10 @@ def verzamel() -> dict:
                             for _, s in treffers[:MAX_TREFWOORD]]
             m = {"k": k, "id": rec["id"], "titel": rec["titel"], "thema": rec.get("thema", ""),
                  "url": norm_url(k, rec), "bewijs": regels, "doen": doen, "trefwoord": op_trefwoord,
-                 "meer_trefwoord": max(0, len(treffers) - MAX_TREFWOORD)}
+                 "meer_trefwoord": max(0, len(treffers) - MAX_TREFWOORD),
+                 # Ook de maatregel zelf is vindbaar op zijn trefwoorden: wie "verwerkingsregister" typt,
+                 # moet AVG artikel 30 vinden, ook al heet dat "Register van verwerkingsactiviteiten".
+                 "zoek": " ".join(woorden)}
             if rec.get("artikel"):
                 m["artikel"] = rec["artikel"]
             if rec.get("kern"):

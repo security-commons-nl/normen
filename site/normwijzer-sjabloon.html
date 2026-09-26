@@ -211,7 +211,7 @@ var D = /*NORMWIJZER_DATA*/;
     tabs.textContent = ''; inhoud.textContent = '';
     var w = norm(term).trim().split(' ').filter(Boolean);
     var res = el('div', 'resultaat');
-    var ms = D.maatregelen.filter(function (m) { return past(norm(K[m.k].naam + ' ' + m.id + ' ' + m.titel + ' ' + m.thema + ' ' + (m.kern || '') + ' ' + (m.artikel || '')), w); });
+    var ms = D.maatregelen.filter(function (m) { return past(norm(K[m.k].naam + ' ' + m.id + ' ' + m.titel + ' ' + m.thema + ' ' + (m.kern || '') + ' ' + (m.artikel || '') + ' ' + (m.zoek || '')), w); });
     var bs = Object.keys(D.barrieres).filter(function (id) { var b = D.barrieres[id]; return past(norm(b.titel + ' ' + b.claim), w); });
     var ss = D.stukken.filter(function (s) { return past(norm(s.titel + ' ' + s.wie), w); });
     hint.textContent = tel(ms.length, 'maatregel', 'maatregelen') + ', ' + tel(bs.length, 'barriere', 'barrieres') + ' uit de zelfcheck en ' + tel(ss.length, 'stuk', 'stukken') + '.';
