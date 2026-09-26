@@ -157,6 +157,12 @@ def test_andersom_levert_elke_barriere_zijn_normen(data):
     assert {"k": "bio2", "id": "8.5", "sterkte": "volledig"} in pr["normen"]
 
 
+def test_een_maatregel_is_vindbaar_op_zijn_trefwoorden(data):
+    """Wie 'verwerkingsregister' typt, zoekt AVG artikel 30 (Register van verwerkingsactiviteiten)."""
+    a30 = next(m for m in data["maatregelen"] if m["k"] == "avg" and m["id"] == "A30")
+    assert "verwerkingsregister" in a30["zoek"]
+
+
 def test_geen_normtekst_in_de_data(data):
     blob = json.dumps(data, ensure_ascii=False)
     for veld in ('"iso_tekst"', '"tekst"', '"overheidsmaatregel_tekst"'):
