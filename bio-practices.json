@@ -1,0 +1,1502 @@
+{
+ "titel": "BIO Practices: verwijzingen per BIO-overheidsmaatregel",
+ "toelichting": "Per overheidsmaatregel de practices die het CIP op BIO Practices noemt, vooral pagina's op NORA Online. Alleen code, adres en een titel uit het adres; geen tekst van het CIP. Opgehaald met tools/haal_bio_practices.py.",
+ "bron": {
+  "naam": "CIP, BIO Practices",
+  "url": "https://www.bio-overheid.nl/bio-practices/",
+  "opgehaald": "2026-09-26",
+  "licentie": "Verwijzingen; de inhoud van BIO Practices is van het CIP (CC BY-NC-SA 4.0) en van NORA Online"
+ },
+ "practices": {
+  "5.01.01": [],
+  "5.01.02": [],
+  "5.02.01": [
+   {
+    "code": "CLD_B.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Cloudbeveiligingsstrategie",
+    "titel": "Cloudbeveiligingsstrategie"
+   },
+   {
+    "code": "CVZ_C.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheerorganisatie_netwerkbeveiliging",
+    "titel": "Beheerorganisatie netwerkbeveiliging"
+   },
+   {
+    "code": "TBV_B.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiligingsorganisatie_Toegangsbeveiliging",
+    "titel": "Beveiligingsorganisatie Toegangsbeveiliging"
+   },
+   {
+    "code": "Een bestuursmanifest voor informatieveiligheid",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/bestuurlijke-principes",
+    "titel": "bestuurlijke-principes"
+   },
+   {
+    "code": "Handreiking Cybersecurity voor Bestuurders en Bedrijfseigenaren",
+    "url": "https://www.cybersecurityraad.nl/documenten/2025/06/04/handreiking-cybersecurity-voor-bestuurders-en-bedrijfseigenaren",
+    "titel": "handreiking-cybersecurity-voor-bestuurders-en-bedrijfseigenaren"
+   }
+  ],
+  "5.02.02": [],
+  "5.03.01": [],
+  "5.04.01": [
+   {
+    "code": "Een bestuursmanifest voor informatieveiligheid",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/bestuurlijke-principes",
+    "titel": "bestuurlijke-principes"
+   },
+   {
+    "code": "Handreiking Cybersecurity voor Bestuurders en Bedrijfseigenaren",
+    "url": "https://www.cybersecurityraad.nl/documenten/2025/06/04/handreiking-cybersecurity-voor-bestuurders-en-bedrijfseigenaren",
+    "titel": "handreiking-cybersecurity-voor-bestuurders-en-bedrijfseigenaren"
+   }
+  ],
+  "5.04.02": [],
+  "5.04.03": [],
+  "5.05.01": [
+   {
+    "code": "CLD_B.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Exit-strategie",
+    "titel": "Exit-strategie"
+   },
+   {
+    "code": "Effectief opereren in de CERT-gemeenschap",
+    "url": "https://www.ncsc.nl/samenwerken/effectief-opereren-de-cert-gemeenschap",
+    "titel": "effectief-opereren-de-cert-gemeenschap"
+   },
+   {
+    "code": "Start een regionale samenwerking",
+    "url": "https://www.ncsc.nl/samenwerken/start-een-regionale-samenwerking",
+    "titel": "start-een-regionale-samenwerking"
+   },
+   {
+    "code": "Start een ISAC",
+    "url": "https://www.ncsc.nl/samenwerken/start-een-isac",
+    "titel": "start-een-isac"
+   }
+  ],
+  "5.06.01": [],
+  "5.07.01": [
+   {
+    "code": "CLD_B.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:IT-functionaliteiten",
+    "titel": "IT-functionaliteiten"
+   }
+  ],
+  "5.08.01": [
+   {
+    "code": "CLD_B.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Transparantie",
+    "titel": "Transparantie"
+   },
+   {
+    "code": "APO_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Analyse_en_specificatie_van_informatiebeveiligingseisen",
+    "titel": "Analyse en specificatie van informatiebeveiligingseisen"
+   },
+   {
+    "code": "CLD_B.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:IT-functionaliteiten",
+    "titel": "IT-functionaliteiten"
+   },
+   {
+    "code": "Risico’s beheersen: de waarde van informatie als uitgangspunt",
+    "url": "https://www.ncsc.nl/risicomanagement/de-waarde-van-informatie-als-uitgangspunt",
+    "titel": "de-waarde-van-informatie-als-uitgangspunt"
+   },
+   {
+    "code": "Risicomanagement Legacy-systemen",
+    "url": "https://www.ncsc.nl/legacy-systemen/risicomanagement-legacy-systemen",
+    "titel": "risicomanagement-legacy-systemen"
+   },
+   {
+    "code": "NEN-ISO/IEC 27005 - Information security risk management / NEN Connect",
+    "url": "https://connect.nen.nl/Family/Detail/61519?compId=14507&collectionId=0",
+    "titel": "61519?compId=14507&collectionId=0"
+   }
+  ],
+  "5.09.01": [
+   {
+    "code": "CLD_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_data",
+    "titel": "Scheiding van data"
+   },
+   {
+    "code": "HIV_B.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Eigenaarschap",
+    "titel": "Eigenaarschap"
+   },
+   {
+    "code": "TBV_02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Eigenaarschap_van_bedrijfsmiddelen",
+    "titel": "Eigenaarschap van bedrijfsmiddelen"
+   },
+   {
+    "code": "HIV_U.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Bedrijfsmiddelen_inventaris",
+    "titel": "Bedrijfsmiddelen inventaris"
+   },
+   {
+    "code": "Risicomanagement Legacy-systemen",
+    "url": "https://www.ncsc.nl/legacy-systemen/risicomanagement-legacy-systemen",
+    "titel": "risicomanagement-legacy-systemen"
+   },
+   {
+    "code": "Aan de slag met het beveiligen van OT/IACS",
+    "url": "https://www.ncsc.nl/ot-operational-technology/aan-de-slag-met-het-beveiligen-van-otiacs",
+    "titel": "aan-de-slag-met-het-beveiligen-van-otiacs"
+   },
+   {
+    "code": "Whitepaper IoT II - Weerbaarheid in de praktijk",
+    "url": "https://www.cip-overheid.nl/media/x4ofscku/20220714-whitepaper-iot-ii-weerbaarheid-in-de-praktijk-versie-11-def.pdf",
+    "titel": "20220714-whitepaper-iot-ii-weerbaarheid-in-de-praktijk-versie-11-def.pdf"
+   }
+  ],
+  "5.10.01": [],
+  "5.11.01": [],
+  "5.12.01": [
+   {
+    "code": "APO_B.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Classificatie_van_Informatie",
+    "titel": "Classificatie van Informatie"
+   }
+  ],
+  "5.13.01": [],
+  "5.14.01": [
+   {
+    "code": "CVZ_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_en_procedures_informatietransport",
+    "titel": "Beleid en procedures informatietransport"
+   },
+   {
+    "code": "CVZ_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Elektronische_berichten",
+    "titel": "Elektronische berichten"
+   },
+   {
+    "code": "Bescherm je domeinen tegen phishing",
+    "url": "https://www.ncsc.nl/phishing/bescherm-domeinnamen-tegen-phishing",
+    "titel": "bescherm-domeinnamen-tegen-phishing"
+   },
+   {
+    "code": "Pas toe leg uit'-standaarden (verplicht)",
+    "url": "https://www.forumstandaardisatie.nl/open-standaarden/verplicht",
+    "titel": "verplicht"
+   },
+   {
+    "code": "ICT-beveiligingsrichtlijnen voor Transport Layer Security",
+    "url": "https://www.ncsc.nl/transport-layer-security/ICT-beveiligingsrichtlijnen-voor-TLS",
+    "titel": "ICT-beveiligingsrichtlijnen-voor-TLS"
+   }
+  ],
+  "5.14.02": [
+   {
+    "code": "CVZ_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_en_procedures_informatietransport",
+    "titel": "Beleid en procedures informatietransport"
+   },
+   {
+    "code": "CVZ_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Elektronische_berichten",
+    "titel": "Elektronische berichten"
+   },
+   {
+    "code": "ICT-beveiligingsrichtlijnen voor Transport Layer Security",
+    "url": "https://www.ncsc.nl/transport-layer-security/ICT-beveiligingsrichtlijnen-voor-TLS",
+    "titel": "ICT-beveiligingsrichtlijnen-voor-TLS"
+   }
+  ],
+  "5.14.03": [
+   {
+    "code": "CVZ_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_en_procedures_informatietransport",
+    "titel": "Beleid en procedures informatietransport"
+   },
+   {
+    "code": "CVZ_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Elektronische_berichten",
+    "titel": "Elektronische berichten"
+   },
+   {
+    "code": "Pas toe leg uit'-standaarden (verplicht)",
+    "url": "https://www.forumstandaardisatie.nl/open-standaarden/verplicht",
+    "titel": "verplicht"
+   }
+  ],
+  "5.14.04": [
+   {
+    "code": "CVZ_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_en_procedures_informatietransport",
+    "titel": "Beleid en procedures informatietransport"
+   },
+   {
+    "code": "CVZ_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Elektronische_berichten",
+    "titel": "Elektronische berichten"
+   }
+  ],
+  "5.14.05": [
+   {
+    "code": "CVZ_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_en_procedures_informatietransport",
+    "titel": "Beleid en procedures informatietransport"
+   },
+   {
+    "code": "CVZ_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Elektronische_berichten",
+    "titel": "Elektronische berichten"
+   }
+  ],
+  "5.15.01": [
+   {
+    "code": "CLD_U.12",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Koppelvlakken",
+    "titel": "Koppelvlakken"
+   },
+   {
+    "code": "TBV_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Toegangbeveiligingsbeleid",
+    "titel": "Toegangbeveiligingsbeleid"
+   }
+  ],
+  "5.16.01": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratieprocedure",
+    "titel": "Registratieprocedure"
+   }
+  ],
+  "5.16.02": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratieprocedure",
+    "titel": "Registratieprocedure"
+   }
+  ],
+  "5.17.01": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "Volwassen authenticeren",
+    "url": "https://www.ncsc.nl/multifactor-authenticatie/volwassen-authenticeren",
+    "titel": "volwassen-authenticeren"
+   }
+  ],
+  "5.17.02": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Autorisatieproces",
+    "titel": "Autorisatieproces"
+   },
+   {
+    "code": "Volwassen authenticeren",
+    "url": "https://www.ncsc.nl/multifactor-authenticatie/volwassen-authenticeren",
+    "titel": "volwassen-authenticeren"
+   }
+  ],
+  "5.17.03": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Autorisatieproces",
+    "titel": "Autorisatieproces"
+   },
+   {
+    "code": "Volwassen authenticeren",
+    "url": "https://www.ncsc.nl/multifactor-authenticatie/volwassen-authenticeren",
+    "titel": "volwassen-authenticeren"
+   }
+  ],
+  "5.18.01": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Toegangverleningsprocedure",
+    "titel": "Toegangverleningsprocedure"
+   },
+   {
+    "code": "TBV_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_van_toegangsrechten",
+    "titel": "Beoordeling van toegangsrechten"
+   }
+  ],
+  "5.18.02": [
+   {
+    "code": "CLD_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Scheiding_van_dienstverlening",
+    "titel": "Scheiding van dienstverlening"
+   },
+   {
+    "code": "TBV_U.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Toegangverleningsprocedure",
+    "titel": "Toegangverleningsprocedure"
+   },
+   {
+    "code": "TBV_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_van_toegangsrechten",
+    "titel": "Beoordeling van toegangsrechten"
+   }
+  ],
+  "5.19.01": [
+   {
+    "code": "SWP_B.02",
+    "url": "https://www.noraonline.nl/wiki/Informatiebeveiligingsbeleid_voor_leveranciersrelaties",
+    "titel": "Informatiebeveiligingsbeleid voor leveranciersrelaties"
+   },
+   {
+    "code": "SWP_U.03",
+    "url": "https://www.noraonline.nl/wiki/Bedrijfscontinu%C3%AFteit",
+    "titel": "Bedrijfscontinuïteit"
+   },
+   {
+    "code": "Inkoopeisen Cybersecurity Overheid (ICO)",
+    "url": "https://www.bio-overheid.nl/inkoopeisen-cybersecurity-overheid-ico/",
+    "titel": "inkoopeisen-cybersecurity-overheid-ico"
+   },
+   {
+    "code": "ICO-wizard",
+    "url": "https://www.bio-overheid.nl/ico-wizard",
+    "titel": "ico-wizard"
+   },
+   {
+    "code": "Handreiking Inkoop ICO",
+    "url": "https://www.bio-overheid.nl/media/wjoatkgu/20260305-handreiking-inkoop-ico-v26-def.pdf",
+    "titel": "20260305-handreiking-inkoop-ico-v26-def.pdf"
+   }
+  ],
+  "5.20.01": [
+   {
+    "code": "Inkoopeisen Cybersecurity Overheid (ICO)",
+    "url": "https://www.bio-overheid.nl/inkoopeisen-cybersecurity-overheid-ico/",
+    "titel": "inkoopeisen-cybersecurity-overheid-ico"
+   },
+   {
+    "code": "ICO-wizard",
+    "url": "https://www.bio-overheid.nl/ico-wizard",
+    "titel": "ico-wizard"
+   },
+   {
+    "code": "Handreiking Inkoop ICO",
+    "url": "https://www.bio-overheid.nl/media/wjoatkgu/20260305-handreiking-inkoop-ico-v26-def.pdf",
+    "titel": "20260305-handreiking-inkoop-ico-v26-def.pdf"
+   }
+  ],
+  "5.20.02": [
+   {
+    "code": "CLD_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Standaarden_voor_clouddiensten",
+    "titel": "Standaarden voor clouddiensten"
+   },
+   {
+    "code": "Inkoopeisen Cybersecurity Overheid (ICO)",
+    "url": "https://www.bio-overheid.nl/inkoopeisen-cybersecurity-overheid-ico/",
+    "titel": "inkoopeisen-cybersecurity-overheid-ico"
+   }
+  ],
+  "5.20.03": [
+   {
+    "code": "Inkoopeisen Cybersecurity Overheid (ICO)",
+    "url": "https://www.bio-overheid.nl/inkoopeisen-cybersecurity-overheid-ico/",
+    "titel": "inkoopeisen-cybersecurity-overheid-ico"
+   },
+   {
+    "code": "ICO-wizard",
+    "url": "https://www.bio-overheid.nl/ico-wizard",
+    "titel": "ico-wizard"
+   },
+   {
+    "code": "SWP_C.01",
+    "url": "https://www.noraonline.nl/wiki/Evaluatie_leveranciersdienstverlening",
+    "titel": "Evaluatie leveranciersdienstverlening"
+   }
+  ],
+  "5.21.02": [],
+  "5.21.03": [],
+  "5.21.04": [],
+  "5.22.01": [
+   {
+    "code": "SWP_C.01",
+    "url": "https://www.noraonline.nl/wiki/Evaluatie_leveranciersdienstverlening",
+    "titel": "Evaluatie leveranciersdienstverlening"
+   }
+  ],
+  "5.22.02": [
+   {
+    "code": "SWP_C.01",
+    "url": "https://www.noraonline.nl/wiki/Evaluatie_leveranciersdienstverlening",
+    "titel": "Evaluatie leveranciersdienstverlening"
+   }
+  ],
+  "5.23.01": [
+   {
+    "code": "Cloud",
+    "url": "https://www.ncsc.nl/cloud",
+    "titel": "cloud"
+   },
+   {
+    "code": "BIO Thema-uitwerking Clouddiensten",
+    "url": "https://www.cip-overheid.nl/media/shhdwqdw/20260501-thema-uitwerking-cloudiensten-v30-def.pdf",
+    "titel": "20260501-thema-uitwerking-cloudiensten-v30-def.pdf"
+   }
+  ],
+  "5.24.01": [],
+  "5.24.02": [],
+  "5.24.03": [],
+  "5.24.04": [],
+  "5.24.05": [
+   {
+    "code": "Ketencommunicatie bij crisis",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/ketencommunicatiebijcrises",
+    "titel": "ketencommunicatiebijcrises"
+   }
+  ],
+  "5.24.06": [],
+  "5.24.07": [
+   {
+    "code": "Effectief opereren in de CERT-gemeenschap",
+    "url": "https://www.ncsc.nl/samenwerken/effectief-opereren-de-cert-gemeenschap",
+    "titel": "effectief-opereren-de-cert-gemeenschap"
+   },
+   {
+    "code": "Ketencommunicatie bij crisis",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/ketencommunicatiebijcrises",
+    "titel": "ketencommunicatiebijcrises"
+   }
+  ],
+  "5.25.01": [],
+  "5.26.01": [],
+  "5.27.01": [],
+  "5.27.02": [
+   {
+    "code": "Start een ketensamenwerking",
+    "url": "https://www.ncsc.nl/samenwerken/start-een-ketensamenwerking",
+    "titel": "start-een-ketensamenwerking"
+   },
+   {
+    "code": "Start een ISAC",
+    "url": "https://www.ncsc.nl/samenwerken/start-een-isac",
+    "titel": "start-een-isac"
+   }
+  ],
+  "5.28.01": [],
+  "5.29.01": [],
+  "5.30.01": [
+   {
+    "code": "CLD_U.20",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   },
+   {
+    "code": "SWP_U.03",
+    "url": "https://www.noraonline.nl/wiki/Bedrijfscontinu%C3%AFteit",
+    "titel": "Bedrijfscontinuïteit"
+   },
+   {
+    "code": "TBV_U.06",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Functiescheiding",
+    "titel": "Functiescheiding"
+   },
+   {
+    "code": "Continuïteit van online diensten",
+    "url": "https://www.ncsc.nl/ddos/continuiteit-van-online-diensten",
+    "titel": "continuiteit-van-online-diensten"
+   }
+  ],
+  "5.30.02": [
+   {
+    "code": "CLD_U.20",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   },
+   {
+    "code": "SWP_U.03",
+    "url": "https://www.noraonline.nl/wiki/Bedrijfscontinu%C3%AFteit",
+    "titel": "Bedrijfscontinuïteit"
+   },
+   {
+    "code": "TBV_U.06",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Functiescheiding",
+    "titel": "Functiescheiding"
+   },
+   {
+    "code": "Continuïteit van online diensten",
+    "url": "https://www.ncsc.nl/ddos/continuiteit-van-online-diensten",
+    "titel": "continuiteit-van-online-diensten"
+   }
+  ],
+  "5.31.01": [
+   {
+    "code": "HIV_B.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Wet_en_regelgeving",
+    "titel": "Wet en regelgeving"
+   }
+  ],
+  "5.32.01": [],
+  "5.33.01": [
+   {
+    "code": "CLD_U.14",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Interoperabiliteit_en_portabiliteit",
+    "titel": "Interoperabiliteit en portabiliteit"
+   }
+  ],
+  "5.34.01": [],
+  "5.35.02": [
+   {
+    "code": "CLD_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Risico-control",
+    "titel": "Risico-control"
+   }
+  ],
+  "5.36.01": [
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Handreiking bij Volwassenheidsmodel Informatiebeveiliging",
+    "url": "https://www.nba.nl/tools-en-ondersteuning/publicaties/2024/handreiking-bij-volwassenheidsmodel-informatiebeveiliging/",
+    "titel": "handreiking-bij-volwassenheidsmodel-informatiebeveiliging"
+   }
+  ],
+  "6.02.01": [],
+  "6.03.01": [
+   {
+    "code": "CLD_U.17",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   },
+   {
+    "code": "HIV_B.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Training_en_Awareness",
+    "titel": "Training en Awareness"
+   }
+  ],
+  "6.03.02": [
+   {
+    "code": "CLD_U.17",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "6.03.03": [
+   {
+    "code": "CLD_U.17",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "6.04.01": [],
+  "6.05.01": [],
+  "6.06.01": [
+   {
+    "code": "CVZ_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Vertrouwelijkheids-_of_geheimhoudingsovereenkomst",
+    "titel": "Vertrouwelijkheids- of geheimhoudingsovereenkomst"
+   }
+  ],
+  "6.07.01": [
+   {
+    "code": "SVP_U.06",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_op_afstand",
+    "titel": "Beheer op afstand"
+   }
+  ],
+  "6.08.01": [
+   {
+    "code": "CLD_U.19",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Clouddiensten-architectuur",
+    "titel": "Clouddiensten-architectuur"
+   }
+  ],
+  "7.01.01": [],
+  "7.01.02": [],
+  "7.02.01": [
+   {
+    "code": "HIV_U.10",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Laad_en_los_locatie",
+    "titel": "Laad en los locatie"
+   },
+   {
+    "code": "TBV_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Fysieke_toegangsbeveiliging",
+    "titel": "Fysieke toegangsbeveiliging"
+   }
+  ],
+  "7.05.01": [
+   {
+    "code": "HIV_B.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Interne_en_Externe_bedreigingen",
+    "titel": "Interne en Externe bedreigingen"
+   }
+  ],
+  "7.06.01": [
+   {
+    "code": "HIV_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Richtlijnen_gebieden_en_ruimten",
+    "titel": "Richtlijnen gebieden en ruimten"
+   }
+  ],
+  "7.07.01": [],
+  "7.08.01": [],
+  "7.09.01": [],
+  "7.10.01": [
+   {
+    "code": "HIV_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Bedrijfsmiddelen_verwijdering",
+    "titel": "Bedrijfsmiddelen verwijdering"
+   }
+  ],
+  "7.10.02": [
+   {
+    "code": "HIV_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Bedrijfsmiddelen_verwijdering",
+    "titel": "Bedrijfsmiddelen verwijdering"
+   }
+  ],
+  "7.10.03": [
+   {
+    "code": "HIV_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Bedrijfsmiddelen_verwijdering",
+    "titel": "Bedrijfsmiddelen verwijdering"
+   }
+  ],
+  "7.11.01": [],
+  "7.12.01": [],
+  "7.13.01": [
+   {
+    "code": "SVP_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Onderhoud_van_servers",
+    "titel": "Onderhoud van servers"
+   }
+  ],
+  "7.14.01": [
+   {
+    "code": "SVP_U.08",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Veilig_verwijderen_of_hergebruiken_van_serverapparatuur",
+    "titel": "Veilig verwijderen of hergebruiken van serverapparatuur"
+   }
+  ],
+  "8.01.01": [
+   {
+    "code": "Geavanceerde informatie over het beveiligen van mobiele apparatuur",
+    "url": "https://www.ncsc.nl/mobiele-apparatuur/geavanceerde-informatie-over-het-beveiligen-van-mobiele-apparatuur",
+    "titel": "geavanceerde-informatie-over-het-beveiligen-van-mobiele-apparatuur"
+   }
+  ],
+  "8.01.02": [
+   {
+    "code": "Geavanceerde informatie over het beveiligen van mobiele apparatuur",
+    "url": "https://www.ncsc.nl/mobiele-apparatuur/geavanceerde-informatie-over-het-beveiligen-van-mobiele-apparatuur",
+    "titel": "geavanceerde-informatie-over-het-beveiligen-van-mobiele-apparatuur"
+   }
+  ],
+  "8.02.01": [
+   {
+    "code": "CLD_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malware-protectie",
+    "titel": "Malware-protectie"
+   },
+   {
+    "code": "TBV_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Wachtwoorden_beheer",
+    "titel": "Wachtwoorden beheer"
+   }
+  ],
+  "8.03.01": [
+   {
+    "code": "CLD_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malware-protectie",
+    "titel": "Malware-protectie"
+   },
+   {
+    "code": "TBV_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Autorisatie",
+    "titel": "Autorisatie"
+   }
+  ],
+  "8.03.02": [
+   {
+    "code": "CLD_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malware-protectie",
+    "titel": "Malware-protectie"
+   },
+   {
+    "code": "TBV_U.07",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Autorisatie",
+    "titel": "Autorisatie"
+   }
+  ],
+  "8.04.01": [],
+  "8.05.01": [
+   {
+    "code": "CVZ_U.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiligde_inlogprocedure",
+    "titel": "Beveiligde inlogprocedure"
+   },
+   {
+    "code": "TBV_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Inlogprocedures",
+    "titel": "Inlogprocedures"
+   },
+   {
+    "code": "CVZ_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Evalueren_netwerk_monitoring",
+    "titel": "Evalueren netwerk monitoring"
+   }
+  ],
+  "8.06.01": [],
+  "8.07.01": [
+   {
+    "code": "SVP_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malwareprotectie",
+    "titel": "Malwareprotectie"
+   }
+  ],
+  "8.07.02": [
+   {
+    "code": "SVP_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malwareprotectie",
+    "titel": "Malwareprotectie"
+   }
+  ],
+  "8.07.03": [
+   {
+    "code": "SVP_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malwareprotectie",
+    "titel": "Malwareprotectie"
+   }
+  ],
+  "8.07.04": [
+   {
+    "code": "SVP_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Malwareprotectie",
+    "titel": "Malwareprotectie"
+   }
+  ],
+  "8.08.01": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Security Advisories",
+    "url": "https://www.ncsc.nl/producten-en-diensten/security-advisories",
+    "titel": "security-advisories"
+   }
+  ],
+  "8.08.02": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Security Advisories",
+    "url": "https://www.ncsc.nl/producten-en-diensten/security-advisories",
+    "titel": "security-advisories"
+   }
+  ],
+  "8.08.03": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Security Advisories",
+    "url": "https://www.ncsc.nl/producten-en-diensten/security-advisories",
+    "titel": "security-advisories"
+   }
+  ],
+  "8.08.04": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Testen van technische veiligheidsmaatregelen",
+    "url": "https://www.ncsc.nl/testen/testen-van-technische-veiligheidsmaatregelen",
+    "titel": "testen-van-technische-veiligheidsmaatregelen"
+   }
+  ],
+  "8.08.05": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   },
+   {
+    "code": "Testen van technische veiligheidsmaatregelen",
+    "url": "https://www.ncsc.nl/testen/testen-van-technische-veiligheidsmaatregelen",
+    "titel": "testen-van-technische-veiligheidsmaatregelen"
+   }
+  ],
+  "8.08.06": [
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   }
+  ],
+  "8.09.01": [],
+  "8.10.01": [],
+  "8.11.01": [],
+  "8.12.01": [],
+  "8.13.01": [
+   {
+    "code": "CLD_U.23",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "8.13.02": [
+   {
+    "code": "CLD_U.23",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "8.13.03": [
+   {
+    "code": "CLD_U.23",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "8.13.04": [
+   {
+    "code": "CLD_U.23",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Multi-tenant_architectuur",
+    "titel": "Multi-tenant architectuur"
+   }
+  ],
+  "8.14.01": [],
+  "8.15.01": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "SVP_C.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheerderactiviteiten_vastgelegd_in_logbestanden",
+    "titel": "Beheerderactiviteiten vastgelegd in logbestanden"
+   },
+   {
+    "code": "TBV_C.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Gebeurtenissen_registreren",
+    "titel": "Gebeurtenissen registreren"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.15.02": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.15.03": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.15.04": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.15.05": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.15.06": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Registratie_gebeurtenissen",
+    "titel": "Registratie gebeurtenissen"
+   }
+  ],
+  "8.16.01": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CVZ_U.15",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Vastleggen_en_monitoring_van_netwerkgebeurtenissen_(events)",
+    "titel": "Vastleggen en monitoring van netwerkgebeurtenissen (events)"
+   },
+   {
+    "code": "SVP_C.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Monitoren_van_servers_en_serverplatforms",
+    "titel": "Monitoren van servers en serverplatforms"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Technische_kwetsbaarhedenbeheer",
+    "titel": "Technische kwetsbaarhedenbeheer"
+   }
+  ],
+  "8.16.02": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CVZ_U.15",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Vastleggen_en_monitoring_van_netwerkgebeurtenissen_(events)",
+    "titel": "Vastleggen en monitoring van netwerkgebeurtenissen (events)"
+   },
+   {
+    "code": "SVP_C.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Monitoren_van_servers_en_serverplatforms",
+    "titel": "Monitoren van servers en serverplatforms"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Technische_kwetsbaarhedenbeheer",
+    "titel": "Technische kwetsbaarhedenbeheer"
+   },
+   {
+    "code": "Detectie in cybersecurity",
+    "url": "https://www.ncsc.nl/detectie/detectie-cybersecurity",
+    "titel": "detectie-cybersecurity"
+   },
+   {
+    "code": "SOC inrichten, begin klein",
+    "url": "https://www.ncsc.nl/detectie/soc-inrichten-begin-klein",
+    "titel": "soc-inrichten-begin-klein"
+   }
+  ],
+  "8.16.03": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CVZ_U.15",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Vastleggen_en_monitoring_van_netwerkgebeurtenissen_(events)",
+    "titel": "Vastleggen en monitoring van netwerkgebeurtenissen (events)"
+   },
+   {
+    "code": "SVP_C.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Monitoren_van_servers_en_serverplatforms",
+    "titel": "Monitoren van servers en serverplatforms"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Technische_kwetsbaarhedenbeheer",
+    "titel": "Technische kwetsbaarhedenbeheer"
+   },
+   {
+    "code": "Detectie in cybersecurity",
+    "url": "https://www.ncsc.nl/detectie/detectie-cybersecurity",
+    "titel": "detectie-cybersecurity"
+   },
+   {
+    "code": "SOC inrichten, begin klein",
+    "url": "https://www.ncsc.nl/detectie/soc-inrichten-begin-klein",
+    "titel": "soc-inrichten-begin-klein"
+   }
+  ],
+  "8.16.04": [
+   {
+    "code": "CLD_U.11",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Crypto-services",
+    "titel": "Crypto-services"
+   },
+   {
+    "code": "CVZ_U.15",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Vastleggen_en_monitoring_van_netwerkgebeurtenissen_(events)",
+    "titel": "Vastleggen en monitoring van netwerkgebeurtenissen (events)"
+   },
+   {
+    "code": "SVP_C.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Monitoren_van_servers_en_serverplatforms",
+    "titel": "Monitoren van servers en serverplatforms"
+   },
+   {
+    "code": "CLD_C.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Technische_kwetsbaarhedenbeheer",
+    "titel": "Technische kwetsbaarhedenbeheer"
+   }
+  ],
+  "8.17.01": [
+   {
+    "code": "SVP_U.13",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Kloksynchronisatie",
+    "titel": "Kloksynchronisatie"
+   }
+  ],
+  "8.18.01": [
+   {
+    "code": "CLD_U.15",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "CLD_U.21",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   }
+  ],
+  "8.18.02": [
+   {
+    "code": "CLD_U.15",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "CLD_U.21",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   }
+  ],
+  "8.19.01": [
+   {
+    "code": "APO_U.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beperkingen_voor_de_installatie_van_software(richtlijnen)",
+    "titel": "Beperkingen voor de installatie van software(richtlijnen)"
+   },
+   {
+    "code": "SVP_U.12",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beperking_van_software-installatie",
+    "titel": "Beperking van software-installatie"
+   }
+  ],
+  "8.20.01": [
+   {
+    "code": "CVZ_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Netwerk_beveiligingsbeheer",
+    "titel": "Netwerk beveiligingsbeheer"
+   },
+   {
+    "code": "CVZ_U.14",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Netwerkbeheer_activiteit",
+    "titel": "Netwerkbeheer activiteit"
+   }
+  ],
+  "8.20.02": [
+   {
+    "code": "CVZ_U.03",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Netwerk_beveiligingsbeheer",
+    "titel": "Netwerk beveiligingsbeheer"
+   },
+   {
+    "code": "CVZ_U.14",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Netwerkbeheer_activiteit",
+    "titel": "Netwerkbeheer activiteit"
+   }
+  ],
+  "8.21.01": [
+   {
+    "code": "CVZ_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiliging_netwerkdiensten",
+    "titel": "Beveiliging netwerkdiensten"
+   },
+   {
+    "code": "Continuïteit van online diensten",
+    "url": "https://www.ncsc.nl/ddos/continuiteit-van-online-diensten",
+    "titel": "continuiteit-van-online-diensten"
+   },
+   {
+    "code": "Technische maatregelen voor de continuïteit van online diensten",
+    "url": "https://www.ncsc.nl/ddos/technische-maatregelen-voor-de-continuiteit-van-online-diensten",
+    "titel": "technische-maatregelen-voor-de-continuiteit-van-online-diensten"
+   }
+  ],
+  "8.21.02": [
+   {
+    "code": "CVZ_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiliging_netwerkdiensten",
+    "titel": "Beveiliging netwerkdiensten"
+   },
+   {
+    "code": "Detectie in cybersecurity",
+    "url": "https://www.ncsc.nl/detectie/detectie-cybersecurity",
+    "titel": "detectie-cybersecurity"
+   },
+   {
+    "code": "CVZ_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiliging_netwerkdiensten",
+    "titel": "Beveiliging netwerkdiensten"
+   }
+  ],
+  "8.21.03": [
+   {
+    "code": "CVZ_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiliging_netwerkdiensten",
+    "titel": "Beveiliging netwerkdiensten"
+   }
+  ],
+  "8.21.04": [
+   {
+    "code": "CVZ_U.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beveiliging_netwerkdiensten",
+    "titel": "Beveiliging netwerkdiensten"
+   }
+  ],
+  "8.22.01": [
+   {
+    "code": "CLD_U.13",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Service-orkestratie",
+    "titel": "Service-orkestratie"
+   },
+   {
+    "code": "CVZ_U.06",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Zonering_en_filtering",
+    "titel": "Zonering en filtering"
+   }
+  ],
+  "8.23.01": [],
+  "8.24.01": [
+   {
+    "code": "CLD_U.10",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Toegang_tot_IT-diensten_en_data",
+    "titel": "Toegang tot IT-diensten en data"
+   },
+   {
+    "code": "CVZ_B.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Overeenkomsten_over_informatietransport",
+    "titel": "Overeenkomsten over informatietransport"
+   },
+   {
+    "code": "SWP_B.05",
+    "url": "https://www.noraonline.nl/wiki/Cryptografie_softwarepaketten",
+    "titel": "Cryptografie softwarepaketten"
+   },
+   {
+    "code": "CVZ_U.10",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Virtual_Private_Networks_(VPN)",
+    "titel": "Virtual Private Networks (VPN)"
+   },
+   {
+    "code": "Pas toe leg uit'-standaarden (verplicht)",
+    "url": "https://www.forumstandaardisatie.nl/open-standaarden/verplicht",
+    "titel": "verplicht"
+   },
+   {
+    "code": "ICT-beveiligingsrichtlijnen voor Transport Layer Security",
+    "url": "https://www.ncsc.nl/transport-layer-security/ICT-beveiligingsrichtlijnen-voor-TLS",
+    "titel": "ICT-beveiligingsrichtlijnen-voor-TLS"
+   }
+  ],
+  "8.25.01": [
+   {
+    "code": "SVP_B.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beleid_voor_beveiligde_inrichting_en_onderhoud",
+    "titel": "Beleid voor beveiligde inrichting en onderhoud"
+   }
+  ],
+  "8.26.01": [
+   {
+    "code": "SWP B.01",
+    "url": "https://www.noraonline.nl/wiki/Verwervingsbeleid_softwarepakketten",
+    "titel": "Verwervingsbeleid softwarepakketten"
+   },
+   {
+    "code": "SWP_U.02",
+    "url": "https://www.noraonline.nl/wiki/Beperkingen_op_wijziging_softwarepakketten",
+    "titel": "Beperkingen op wijziging softwarepakketten"
+   }
+  ],
+  "8.27.01": [
+   {
+    "code": "APO_B.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Engineeringprincipes_beveiligde_systemen",
+    "titel": "Engineeringprincipes beveiligde systemen"
+   },
+   {
+    "code": "SVP_B.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Principes_voor_inrichten_van_beveiligde_servers",
+    "titel": "Principes voor inrichten van beveiligde servers"
+   },
+   {
+    "code": "Grip op SSD 3.0: De methode",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/gripopssddemethode30",
+    "titel": "gripopssddemethode30"
+   },
+   {
+    "code": "Beleids- en beheersingsrichtlijnen voor de ontwikkeling van veilige software",
+    "url": "https://www.ncsc.nl/preventieve-beveiligingsmaatregelen/beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software",
+    "titel": "beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software"
+   }
+  ],
+  "8.28.01": [],
+  "8.29.01": [
+   {
+    "code": "APO_U.09",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Testen_van_systeembeveiliging",
+    "titel": "Testen van systeembeveiliging"
+   },
+   {
+    "code": "Grip op SSD 3.0: De methode",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/gripopssddemethode30",
+    "titel": "gripopssddemethode30"
+   },
+   {
+    "code": "Beleids- en beheersingsrichtlijnen voor de ontwikkeling van veilige software",
+    "url": "https://www.ncsc.nl/preventieve-beveiligingsmaatregelen/beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software",
+    "titel": "beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software"
+   }
+  ],
+  "8.30.01": [
+   {
+    "code": "APO_B.05",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Business_Impact_Analyse",
+    "titel": "Business Impact Analyse"
+   },
+   {
+    "code": "Grip op SSD 3.0: De methode",
+    "url": "https://www.cip-overheid.nl/producten-en-diensten/gripopssddemethode30",
+    "titel": "gripopssddemethode30"
+   },
+   {
+    "code": "Beleids- en beheersingsrichtlijnen voor de ontwikkeling van veilige software",
+    "url": "https://www.ncsc.nl/preventieve-beveiligingsmaatregelen/beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software",
+    "titel": "beleids-en-beheersingsrichtlijnen-voor-de-ontwikkeling-van-veilige-software"
+   }
+  ],
+  "8.31.01": [
+   {
+    "code": "APO_U.10",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beschermen_van_testgegevens",
+    "titel": "Beschermen van testgegevens"
+   }
+  ],
+  "8.31.02": [
+   {
+    "code": "APO_U.10",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beschermen_van_testgegevens",
+    "titel": "Beschermen van testgegevens"
+   }
+  ],
+  "8.32.01": [
+   {
+    "code": "CLD_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Herstelfunctie_voor_data_en_clouddiensten",
+    "titel": "Herstelfunctie voor data en clouddiensten"
+   },
+   {
+    "code": "APO_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Procedures_voor_wijzigingsbeheer_m.b.t._applicaties",
+    "titel": "Procedures voor wijzigingsbeheer m.b.t. applicaties"
+   },
+   {
+    "code": "SWP_U.02",
+    "url": "https://www.noraonline.nl/wiki/Beperkingen_op_wijziging_softwarepakketten",
+    "titel": "Beperkingen op wijziging softwarepakketten"
+   },
+   {
+    "code": "SWP_C.02",
+    "url": "https://www.noraonline.nl/wiki/Versiebeheer",
+    "titel": "Versiebeheer"
+   }
+  ],
+  "8.32.02": [
+   {
+    "code": "CLD_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Herstelfunctie_voor_data_en_clouddiensten",
+    "titel": "Herstelfunctie voor data en clouddiensten"
+   },
+   {
+    "code": "APO_U.01",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Procedures_voor_wijzigingsbeheer_m.b.t._applicaties",
+    "titel": "Procedures voor wijzigingsbeheer m.b.t. applicaties"
+   },
+   {
+    "code": "SWP_U.02",
+    "url": "https://www.noraonline.nl/wiki/Beperkingen_op_wijziging_softwarepakketten",
+    "titel": "Beperkingen op wijziging softwarepakketten"
+   }
+  ],
+  "8.33.01": [],
+  "8.34.01": [],
+  "5.24.08": [
+   {
+    "code": "Coordinated Vulnerability Disclosure",
+    "url": "https://www.informatiebeveiligingsdienst.nl/responsible-disclosure/",
+    "titel": "responsible-disclosure"
+   },
+   {
+    "code": "CLD_U.18",
+    "url": "https://www.noraonline.nl/wiki/Logging_en_monitoring_clouddiensten",
+    "titel": "Logging en monitoring clouddiensten"
+   },
+   {
+    "code": "SVP_U.04",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beheer_van_serverkwetsbaarheden",
+    "titel": "Beheer van serverkwetsbaarheden"
+   },
+   {
+    "code": "SWP_C.03",
+    "url": "https://www.noraonline.nl/wiki/Patchmanagement_softwarepakketten",
+    "titel": "Patchmanagement softwarepakketten"
+   },
+   {
+    "code": "SVP_C.02",
+    "url": "https://www.noraonline.nl/wiki/ISOR:Beoordeling_technische_serveromgeving",
+    "titel": "Beoordeling technische serveromgeving"
+   }
+  ]
+ }
+}

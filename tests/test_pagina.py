@@ -20,7 +20,9 @@ import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATASETS = ["bio2.json", "bio2-domeinen.json", "nist-csf.json", "wpg.json", "avg.json",
-            "schema.json"]
+            "schema.json", "bio-practices.json", "trefwoorden.json"]
+# Geen dataset maar een pagina: gaat wel mee naar dist, en wordt niet als JSON gelezen.
+PAGINAS = ["normwijzer.html"]
 
 
 def gedeelde_build() -> pathlib.Path | None:
@@ -60,7 +62,13 @@ def test_datasets_gaan_mee_als_download(gebouwd):
 def test_datasets_staan_in_de_config():
     """De lijst in site/config.json is de bron; loopt hij achter, dan mist er een download."""
     config = json.loads((ROOT / "site" / "config.json").read_text(encoding="utf-8"))
-    assert sorted(config.get("assets", [])) == sorted(DATASETS)
+    assert sorted(config.get("assets", [])) == sorted(DATASETS + PAGINAS)
+
+
+def test_de_normwijzer_gaat_mee_naar_dist(gebouwd):
+    """De normwijzer staat naast de leesversie op Pages; zonder kopie is de link in de README dood."""
+    for naam in PAGINAS:
+        assert (ROOT / "dist" / naam).exists(), f"{naam} niet gekopieerd naar dist"
 
 
 def test_geen_relatieve_link_zonder_bestand(gebouwd):

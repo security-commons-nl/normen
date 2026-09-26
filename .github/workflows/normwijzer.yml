@@ -1,0 +1,52 @@
+name: Normwijzer bijwerken
+
+# De normwijzer haalt zijn inhoud uit drie repo's: normen, aanvalspaden en de kennisbank. Een nieuwe
+# handleiding of bron in de kennisbank moet er dus ook zonder wijziging in deze repo in komen. Deze
+# workflow bouwt de pagina elke nacht opnieuw en commit alleen als er iets veranderd is.
+#
+# Een commit met GITHUB_TOKEN start geen nieuwe workflow; daarom wordt de Pages-uitrol daarna expliciet
+# gestart (workflow_dispatch is daarop de uitzondering).
+
+on:
+  schedule:
+    - cron: "37 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  bouwen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: security-commons-nl/aanvalspaden
+          path: _aanvalspaden
+      - uses: actions/checkout@v7
+        with:
+          repository: security-commons-nl/kennisbank
+          path: _kennisbank
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Bouwen
+        run: python tools/bouw_normwijzer.py
+
+      - name: Committen als er iets veranderd is, en de pagina uitrollen
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- normwijzer.html; then
+            echo "Normwijzer ongewijzigd."
+            exit 0
+          fi
+          git config user.name "normwijzer-bot"
+          git config user.email "normwijzer-bot@users.noreply.github.com"
+          git add normwijzer.html
+          git commit -m "normwijzer: dagelijks bijgewerkt uit aanvalspaden en kennisbank"
+          git push
+          gh workflow run pages.yml

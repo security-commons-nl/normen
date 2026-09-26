@@ -1,0 +1,611 @@
+{
+ "titel": "Trefwoorden per maatregel voor de normwijzer",
+ "toelichting": "Per maatregel de woorden waarmee de normwijzer stukken van anderen en uit de kennisbank vindt die over hetzelfde gaan. Een treffer op trefwoord is een voorstel, geen oordeel: de pagina zegt dat erbij. Kies woorden die specifiek zijn voor de maatregel; een algemeen woord als 'beleid' of 'informatiebeveiliging' vindt alles en daarmee niets. Woorden van drie letters of minder tellen alleen aan het begin van een woord.",
+ "bio2": {
+  "5.1": [
+   "informatiebeveiligingsbeleid",
+   "ib&p-beleid",
+   "strategisch informatiebeveiligings"
+  ],
+  "5.2": [
+   "rasci",
+   "rollen en verantwoordelijkheden",
+   "isms verantwoordelijkheden"
+  ],
+  "5.3": [
+   "functiescheiding"
+  ],
+  "5.4": [
+   "lijnmanager",
+   "managementverantwoordelijkheid"
+  ],
+  "5.7": [
+   "dreigingsbeeld",
+   "dreigingsanalyse"
+  ],
+  "5.8": [
+   "projectmanagement",
+   "security by design",
+   "privacy by design"
+  ],
+  "5.9": [
+   "bedrijfsmiddelen",
+   "cmdb"
+  ],
+  "5.10": [
+   "aanvaardbaar gebruik",
+   "gedragscode",
+   "acceptable use"
+  ],
+  "5.12": [
+   "dataclassificatie",
+   "classificatietoets",
+   "biv"
+  ],
+  "5.13": [
+   "labelen"
+  ],
+  "5.14": [
+   "gegevensuitwisseling",
+   "informatie-uitwisseling",
+   "overdragen van informatie"
+  ],
+  "5.15": [
+   "toegangsbeveiliging",
+   "toegangsbeleid",
+   "logische toegang"
+  ],
+  "5.16": [
+   "identiteitsbeheer",
+   "iam",
+   "identity"
+  ],
+  "5.17": [
+   "wachtwoord",
+   "wachtwoordkluis",
+   "authenticatie-informatie"
+  ],
+  "5.18": [
+   "toegangsrechten",
+   "autorisatie",
+   "autorisaties"
+  ],
+  "5.19": [
+   "leveranciers",
+   "leveranciersbeoordeling",
+   "leveranciersmanagement"
+  ],
+  "5.20": [
+   "verwerkersovereenkomst",
+   "inkoopvoorwaarden",
+   "security annex",
+   "contractbijlage",
+   "gibit"
+  ],
+  "5.21": [
+   "toeleveringsketen",
+   "ketenafhankelijkheden",
+   "supply chain"
+  ],
+  "5.22": [
+   "leveranciersdiensten",
+   "leveranciersbeoordeling"
+  ],
+  "5.23": [
+   "cloud",
+   "clouddiensten",
+   "saas"
+  ],
+  "5.24": [
+   "incidentmanagement",
+   "incident en response",
+   "incidentprocedure",
+   "incident response"
+  ],
+  "5.25": [
+   "beveiligingsincident",
+   "incidentclassificatie"
+  ],
+  "5.26": [
+   "incident response",
+   "incidentafhandeling",
+   "ransomware"
+  ],
+  "5.27": [
+   "lessons learned",
+   "evaluatie incident",
+   "lessen voor de gemeente"
+  ],
+  "5.28": [
+   "bewijsmateriaal",
+   "forensisch",
+   "forensiek"
+  ],
+  "5.29": [
+   "crisis",
+   "cybercrisis",
+   "verstoring",
+   "calamiteit"
+  ],
+  "5.30": [
+   "bedrijfscontinuiteit",
+   "continuiteit",
+   "bcm",
+   "business continuity",
+   "herstelplan",
+   "exitstrategie"
+  ],
+  "5.31": [
+   "wet- en regelgeving",
+   "cyberbeveiligingswet",
+   "nis2",
+   "ensia"
+  ],
+  "5.33": [
+   "archivering",
+   "archief",
+   "bewaartermijn"
+  ],
+  "5.34": [
+   "privacy",
+   "persoonsgegevens",
+   "avg",
+   "gegevensbescherming"
+  ],
+  "5.35": [
+   "onafhankelijke beoordeling",
+   "ensia"
+  ],
+  "5.36": [
+   "naleving",
+   "compliance",
+   "self assessment",
+   "zelfevaluatie"
+  ],
+  "6.2": [
+   "arbeidsovereenkomst",
+   "personeelsbeleid"
+  ],
+  "6.3": [
+   "bewustwording",
+   "awareness",
+   "training",
+   "e-learning",
+   "serious game"
+  ],
+  "6.4": [
+   "disciplinair"
+  ],
+  "6.5": [
+   "uitdiensttreding",
+   "beeindiging dienstverband",
+   "offboarding"
+  ],
+  "6.6": [
+   "geheimhouding",
+   "vertrouwelijkheidsovereenkomst"
+  ],
+  "6.7": [
+   "thuiswerken",
+   "telewerk",
+   "werken op afstand"
+  ],
+  "6.8": [
+   "melden van incidenten",
+   "meldplicht",
+   "datalek"
+  ],
+  "7.1": [
+   "fysieke beveiliging",
+   "beveiligingszones"
+  ],
+  "7.2": [
+   "fysieke toegang",
+   "toegangspas",
+   "sleutelbeheer"
+  ],
+  "7.5": [
+   "fysieke dreigingen",
+   "brand",
+   "overstroming"
+  ],
+  "7.7": [
+   "clear desk",
+   "clear screen"
+  ],
+  "7.9": [
+   "mobiele apparatuur",
+   "buiten het terrein"
+  ],
+  "7.10": [
+   "opslagmedia",
+   "mobiele gegevensdragers",
+   "usb"
+  ],
+  "7.14": [
+   "verwijderen van apparatuur",
+   "hergebruiken van apparatuur",
+   "afvoeren"
+  ],
+  "8.1": [
+   "endpoint",
+   "werkplek",
+   "mobile device",
+   "mdm",
+   "byod",
+   "intune"
+  ],
+  "8.2": [
+   "beheerrechten",
+   "beheeraccounts",
+   "privileged",
+   "tiered",
+   "beheerwerkplek",
+   "just-in-time"
+  ],
+  "8.3": [
+   "toegang tot informatie",
+   "need to know"
+  ],
+  "8.5": [
+   "authenticatie",
+   "2fa",
+   "mfa",
+   "tweefactor",
+   "passkey",
+   "fido2",
+   "inloggen"
+  ],
+  "8.6": [
+   "capaciteitsbeheer"
+  ],
+  "8.7": [
+   "malware",
+   "anti-malware",
+   "virusscanner",
+   "edr",
+   "ransomware"
+  ],
+  "8.8": [
+   "kwetsbaarheden",
+   "kwetsbaarheid",
+   "patchmanagement",
+   "patch",
+   "log4j",
+   "citrix"
+  ],
+  "8.9": [
+   "configuratiebeheer",
+   "hardening",
+   "baseline configuratie"
+  ],
+  "8.10": [
+   "wissen van informatie",
+   "vernietigen"
+  ],
+  "8.11": [
+   "maskeren",
+   "pseudonimiseren",
+   "anonimiseren",
+   "anonimiseringstool",
+   "datamask"
+  ],
+  "8.12": [
+   "data leakage",
+   "dlp",
+   "gegevenslekken"
+  ],
+  "8.13": [
+   "back-up",
+   "backup",
+   "hersteltest",
+   "recovery"
+  ],
+  "8.14": [
+   "redundantie",
+   "uitwijk"
+  ],
+  "8.15": [
+   "logging",
+   "logbestanden",
+   "logverzameling",
+   "retentie"
+  ],
+  "8.16": [
+   "monitoring",
+   "siem",
+   "soc",
+   "detectie",
+   "mdr"
+  ],
+  "8.17": [
+   "kloksynchronisatie",
+   "tijdsynchronisatie"
+  ],
+  "8.19": [
+   "software installeren",
+   "application control",
+   "applicatiewhitelisting"
+  ],
+  "8.20": [
+   "netwerkbeveiliging",
+   "netwerkcomponenten",
+   "firewall"
+  ],
+  "8.21": [
+   "netwerkdiensten",
+   "dns",
+   "ddos",
+   "wifi"
+  ],
+  "8.22": [
+   "segmentatie",
+   "netwerksegmentatie",
+   "microsegmentatie"
+  ],
+  "8.23": [
+   "webfilter",
+   "webfilters"
+  ],
+  "8.24": [
+   "cryptografie",
+   "encryptie",
+   "versleuteling",
+   "pki",
+   "certificaten"
+  ],
+  "8.25": [
+   "ontwikkelcyclus",
+   "ssdlc",
+   "secure software",
+   "grip op ssd"
+  ],
+  "8.26": [
+   "toepassingsbeveiligingseisen",
+   "applicatiebeveiliging",
+   "beveiligingseisen"
+  ],
+  "8.27": [
+   "architectuur",
+   "zero trust"
+  ],
+  "8.28": [
+   "veilig coderen",
+   "secure coding",
+   "owasp"
+  ],
+  "8.29": [
+   "pentest",
+   "penetratietest",
+   "security test",
+   "web en api testen"
+  ],
+  "8.30": [
+   "uitbestede ontwikkeling",
+   "uitbestede systeemontwikkeling"
+  ],
+  "8.31": [
+   "ontwikkel-, test- en productie",
+   "dtap",
+   "otap"
+  ],
+  "8.32": [
+   "wijzigingsbeheer",
+   "change management"
+  ],
+  "8.33": [
+   "testgegevens",
+   "testdata"
+  ],
+  "8.34": [
+   "tijdens audits"
+  ]
+ },
+ "avg": {
+  "A05": [
+   "grondbeginselen",
+   "beginselen"
+  ],
+  "A05-1f": [
+   "beveiliging van persoonsgegevens"
+  ],
+  "A05-2": [
+   "verantwoordingsplicht",
+   "accountability"
+  ],
+  "A06": [
+   "grondslag",
+   "rechtmatigheid"
+  ],
+  "A07": [
+   "toestemming"
+  ],
+  "A09": [
+   "bijzondere persoonsgegevens",
+   "bijzondere categorieen"
+  ],
+  "A12": [
+   "privacyverklaring",
+   "transparantie"
+  ],
+  "A13": [
+   "informatieplicht",
+   "privacyverklaring"
+  ],
+  "A14": [
+   "informatieplicht"
+  ],
+  "A15": [
+   "inzageverzoek",
+   "recht op inzage",
+   "rechten van betrokkenen"
+  ],
+  "A16": [
+   "rectificatie",
+   "rechten van betrokkenen"
+  ],
+  "A17": [
+   "gegevenswissing",
+   "vergetelheid",
+   "rechten van betrokkenen"
+  ],
+  "A18": [
+   "beperking van de verwerking"
+  ],
+  "A20": [
+   "overdraagbaarheid",
+   "dataportabiliteit"
+  ],
+  "A21": [
+   "recht van bezwaar"
+  ],
+  "A22": [
+   "profilering",
+   "geautomatiseerde besluitvorming",
+   "algoritme",
+   "algoritmes"
+  ],
+  "A24": [
+   "privacybeleid",
+   "privacyhandboek",
+   "verantwoordelijkheid verwerkingsverantwoordelijke"
+  ],
+  "A25": [
+   "privacy by design",
+   "privacy by default",
+   "gegevensbescherming door ontwerp"
+  ],
+  "A26": [
+   "gezamenlijke verwerkingsverantwoordelijken",
+   "gezamenlijk verwerkingsverantwoordelijk"
+  ],
+  "A28": [
+   "verwerkersovereenkomst"
+  ],
+  "A30": [
+   "verwerkingsregister",
+   "register van verwerkingen",
+   "register van verwerkingsactiviteiten"
+  ],
+  "A32": [
+   "beveiliging van de verwerking",
+   "passende beveiliging"
+  ],
+  "A33": [
+   "datalek",
+   "datalekken",
+   "meldplicht"
+  ],
+  "A34": [
+   "datalek",
+   "mededeling aan betrokkene"
+  ],
+  "A35": [
+   "dpia",
+   "gegevensbeschermingseffectbeoordeling",
+   "pre-scan",
+   "iama"
+  ],
+  "A36": [
+   "voorafgaande raadpleging"
+  ],
+  "A37": [
+   "functionaris gegevensbescherming",
+   "fg"
+  ],
+  "A38": [
+   "functionaris gegevensbescherming",
+   "fg"
+  ],
+  "A39": [
+   "functionaris gegevensbescherming",
+   "fg"
+  ],
+  "A44": [
+   "doorgifte",
+   "buiten de eer",
+   "derde landen"
+  ],
+  "A46": [
+   "doorgifte",
+   "modelcontractbepalingen",
+   "standard contractual clauses"
+  ]
+ },
+ "wpg": {
+  "W01": [
+   "wet politiegegevens",
+   "wpg"
+  ],
+  "W02": [
+   "doelbinding"
+  ],
+  "W06": [
+   "beveiliging politiegegevens",
+   "privacy by design"
+  ],
+  "W08": [
+   "dpia",
+   "gegevensbeschermingseffectbeoordeling"
+  ],
+  "W10": [
+   "autorisatie",
+   "autorisaties"
+  ],
+  "W13": [
+   "verwerkersovereenkomst"
+  ],
+  "W14": [
+   "geheimhouding"
+  ],
+  "W20": [
+   "bewaartermijn",
+   "bewaartermijnen",
+   "vernietigen"
+  ],
+  "W25": [
+   "rechten van betrokkenen",
+   "inzageverzoek"
+  ],
+  "W26": [
+   "register van verwerkingen",
+   "verwerkingsregister"
+  ],
+  "W28": [
+   "logging"
+  ],
+  "W29": [
+   "wpg audit",
+   "audit wet politiegegevens",
+   "privacy audit"
+  ],
+  "W30": [
+   "datalek",
+   "datalekken",
+   "meldplicht"
+  ],
+  "W31": [
+   "functionaris gegevensbescherming"
+  ],
+  "B4-1": [
+   "wijzigingsbeheer"
+  ],
+  "B4-2": [
+   "toegangsbeveiliging",
+   "logische toegang"
+  ],
+  "B4-3": [
+   "patchmanagement",
+   "kwetsbaarheden"
+  ],
+  "B4-4": [
+   "cryptografie",
+   "encryptie"
+  ],
+  "B4-5": [
+   "pentest",
+   "penetratietest",
+   "vulnerability scan"
+  ]
+ }
+}
