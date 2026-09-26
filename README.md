@@ -6,6 +6,11 @@ Voor iedereen die een norm in een tool wil laden zonder hem eerst uit een PDF te
 
 Status: in gebruik. De aanvalspaden en applicatiecheck lezen hieruit; tests en CI bewaken de inhoud.
 
+> **Zoek je wat een norm vraagt en wat je eraan kunt doen?** Open de
+> [normwijzer](https://security-commons-nl.github.io/normen/normwijzer.html): per maatregel uit BIO 2.0,
+> NIST CSF 2.0, de AVG en de Wpg de link naar de bron, de practices van het CIP, handleidingen en stukken
+> van anderen, en het bewijs dat de zelfcheck oplevert. Andersom: typ wat je doet en zie de normen.
+
 ## Voor wie
 
 Wie een instrument bouwt dat naar een norm verwijst, en wie een norm wil doorzoeken of hergebruiken
@@ -59,6 +64,22 @@ Wat er **niet** in zit: de mappingen tussen kaders en de aanvalspaden. Die horen
 staan in [`aanvalspaden/mappingen/`](https://github.com/security-commons-nl/aanvalspaden). Deze repo
 levert de bronnen; de aanvalspaden leggen de verbanden.
 
+## De normwijzer
+
+[`normwijzer.html`](https://security-commons-nl.github.io/normen/normwijzer.html) brengt de kaders, de
+mappingen en de kennisbank samen op één pagina. Elke maatregel heeft een eigen adres
+(`normwijzer.html#bio2/8.5`, `#avg/A35`, `#nist-csf/PR.AA-01`) met vier blokken: wat de norm vraagt, wat je
+eraan kunt doen, hoe je het aantoont, en wat er nog ontbreekt.
+
+| Bestand | Wat |
+|---|---|
+| [`bio-practices.json`](bio-practices.json) | Per BIO-overheidsmaatregel de practices die het CIP op BIO Practices noemt (102 van de 148, 248 verwijzingen op 26-09-2026). Alleen code en adres, geen tekst |
+| [`trefwoorden.json`](trefwoorden.json) | Per maatregel de woorden waarmee de normwijzer stukken uit de kennisbank en het bronnenregister vindt. Een treffer staat als voorstel op de pagina |
+| `site/normwijzer-sjabloon.html` | De pagina zelf; de data wordt er bij het bouwen in gezet |
+
+Een barriere **levert bewijs voor** een maatregel, zoals in de mappingen. De normwijzer zegt nooit dat je
+aan een norm voldoet.
+
 ## Onderhoud
 
 - `python tools/controleer.py` valideert alle kaders, herrekent de vingerafdrukken en schrijft
@@ -70,3 +91,9 @@ levert de bronnen; de aanvalspaden leggen de verbanden.
   (`genereer_nist.py` leest de CSF-export van NIST). Voor BIO 2.0 is de eerste versie eenmalig
   overgenomen uit `cisochat` met `tools/overname.py`; dat script documenteert de herkomst en hoeft niet
   opnieuw te draaien.
+- `python tools/bouw_normwijzer.py` bouwt de normwijzer. Hij leest `aanvalspaden` en `kennisbank` als
+  buurmap (of uit `_aanvalspaden` en `_kennisbank`). De workflow *Normwijzer bijwerken* doet dat elke
+  nacht en commit alleen als er iets is veranderd, zodat een nieuwe handleiding in de kennisbank vanzelf
+  in de normwijzer komt.
+- `python tools/haal_bio_practices.py --schrijf` haalt de practices van het CIP opnieuw op. Het formulier
+  van BIO Practices kent geen adres per maatregel, vandaar het script; het wacht even tussen de vragen.

@@ -32,6 +32,17 @@ jobs:
           cache-dependency-path: .sitebuild/package-lock.json
       - run: npm ci --prefix .sitebuild
 
+      # De normwijzer voegt de aanvalspaden en de kennisbank samen. Zonder deze checkouts slaan de tests
+      # op de gebouwde data zichzelf over.
+      - uses: actions/checkout@v7
+        with:
+          repository: security-commons-nl/aanvalspaden
+          path: _aanvalspaden
+      - uses: actions/checkout@v7
+        with:
+          repository: security-commons-nl/kennisbank
+          path: _kennisbank
+
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"

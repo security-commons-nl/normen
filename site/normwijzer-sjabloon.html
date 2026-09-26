@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:">
+<title>Normwijzer · Security Commons NL</title>
+<meta name="description" content="Per maatregel uit BIO 2.0, NIST CSF 2.0, de AVG en de Wpg: wat de norm vraagt, wat je eraan kunt doen en welk bewijs je dan hebt. En andersom: wat je doet, en welke normen dat raakt.">
+<style>
+:root{--ink:#1a2330;--muted:#5a6675;--line:#d9dee6;--card:#fff;--bg:#f5f7fa;--accent:#1f4e79;--accent2:#1c6b4a;--warm:#7a4b00;--warmbg:#fff4e0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,'Segoe UI',Arial,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:22px 16px 60px}
+.kruimel{font-size:13px;color:var(--muted);margin-bottom:10px}
+.kruimel a{color:var(--accent);text-decoration:none}
+h1{font-size:28px;margin:0 0 4px;color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 16px}
+.lead{border-left:3px solid var(--accent);background:#eaf0f6;padding:10px 14px;border-radius:0 6px 6px 0;margin:0 0 18px}
+.zoek{display:flex;gap:10px;margin:0 0 8px}
+.zoek input{flex:1;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.hint{font-size:13px;color:var(--muted);margin:0 0 16px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tabs a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-size:14px}
+.tabs a.aan{background:var(--accent);border-color:var(--accent);color:#fff}
+.lijst{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:8px}
+.lijst li{border-top:1px solid var(--line)}
+.lijst li:first-child{border-top:0}
+.lijst a.rij{display:flex;gap:12px;align-items:baseline;padding:9px 13px;color:var(--ink);text-decoration:none}
+.lijst a.rij:hover{background:#f0f4f8}
+.nr{font-weight:600;color:var(--accent);min-width:74px;white-space:nowrap}
+.tt{flex:1}
+.thema{color:var(--muted);font-size:12.5px}
+.badges{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.badge{font-size:11.5px;border-radius:4px;padding:0 6px;white-space:nowrap;border:1px solid var(--line);color:var(--muted);background:#f7f8fa}
+.badge.b{background:#e6f2ee;color:var(--accent2);border-color:#a8d5bd}
+.badge.d{background:#eaf0f6;color:var(--accent);border-color:#c5d4e6}
+.badge.w{background:#fff;color:#9aa2ad}
+.blok{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:0 0 14px}
+.blok h2{font-size:17px;margin:0 0 8px;color:var(--accent)}
+.blok h3{font-size:14px;margin:12px 0 4px}
+.blok ul{margin:4px 0 0;padding-left:20px}
+.blok li{margin:4px 0}
+.blok a{color:var(--accent)}
+.detailkop{margin:0 0 14px}
+.detailkop .nr{font-size:14px}
+.detailkop h1{font-size:24px}
+.klein{font-size:13px;color:var(--muted)}
+.sterkte{font-size:11.5px;border-radius:4px;padding:0 6px;margin-left:6px;white-space:nowrap}
+.sterkte.volledig{background:#e6f2ee;color:var(--accent2);border:1px solid #a8d5bd}
+.sterkte.gedeeltelijk{background:#eaf0f6;color:var(--accent);border:1px solid #c5d4e6}
+.sterkte.raakvlak{background:#f7f8fa;color:var(--muted);border:1px solid var(--line)}
+.wie{color:var(--muted);font-size:13px;margin-left:4px}
+.slot{font-size:12px;color:var(--warm);background:var(--warmbg);border:1px solid #f0d9ad;border-radius:4px;padding:0 6px;margin-left:4px}
+.voorstel{font-size:12px;color:var(--warm);background:var(--warmbg);border:1px solid #f0d9ad;border-radius:4px;padding:1px 7px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.chip{font-size:12.5px;border:1px solid #c5d4e6;background:#eaf0f6;color:var(--accent);border-radius:4px;padding:0 7px;text-decoration:none;white-space:nowrap}
+.chip.tw{border-style:dashed}
+.leeg{color:var(--muted)}
+.terug{display:inline-block;margin:0 0 12px;color:var(--accent);text-decoration:none;font-size:14px}
+.resultaat h2{font-size:16px;margin:18px 0 6px;color:var(--accent)}
+.res{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 13px;margin:0 0 6px}
+.res a.t{color:var(--ink);font-weight:600;text-decoration:none}
+.res a.t:hover{text-decoration:underline}
+.voet{margin-top:26px;font-size:13px;color:var(--muted)}
+.voet a{color:var(--accent)}
+@media (max-width:620px){.lijst a.rij{flex-wrap:wrap}.badges{justify-content:flex-start;width:100%}}
+@media print{.zoek,.tabs,.hint,.terug{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kruimel"><a href="https://security-commons-nl.github.io/">Security Commons NL</a> › <a href="./">normen</a> › Normwijzer</div>
+  <h1>Normwijzer</h1>
+  <p class="sub">BIO 2.0, NIST CSF 2.0, de AVG en de Wpg, per maatregel</p>
+  <p class="lead">Per maatregel: <b>wat de norm vraagt</b> (met een link naar de bron), <b>wat je eraan kunt doen</b> (practices van het CIP, handleidingen en stukken van anderen) en <b>welk bewijs je dan hebt</b> (uit de zelfcheck en de meting). Andersom: typ wat je doet, en zie welke normen dat raakt.</p>
+  <div class="zoek"><label for="q" class="klein" style="position:absolute;left:-9999px">Zoeken</label><input id="q" type="search" placeholder="Bijvoorbeeld: 8.5, logging, passkeys, DPIA" autocomplete="off"></div>
+  <p class="hint" id="hint">Zoek op nummer, onderwerp of wat je doet. Of kies hieronder een kader.</p>
+  <nav class="tabs" id="tabs"></nav>
+  <main id="inhoud"></main>
+  <p class="voet">Een barriere uit de zelfcheck <b>levert bewijs voor</b> een maatregel; of je aan de norm voldoet, beoordeelt de auditor. De koppelingen zijn een onderbouwd voorstel en wachten op toetsing door vakgenoten. Een treffer <i>op trefwoord</i> is gevonden op de titel en niet door een mens beoordeeld. Er staat geen normtekst op deze pagina; die staat bij de bron. Bron van deze pagina: <a href="https://github.com/security-commons-nl/normen">github.com/security-commons-nl/normen</a> · EUPL-1.2.</p>
+</div>
+<script>
+var D = /*NORMWIJZER_DATA*/;
+(function () {
+  var M = {}; D.maatregelen.forEach(function (m) { M[m.k + '/' + m.id] = m; });
+  var K = {}; D.kaders.forEach(function (k) { K[k.id] = k; });
+  var inhoud = document.getElementById('inhoud'), q = document.getElementById('q'), tabs = document.getElementById('tabs');
+  var hint = document.getElementById('hint');
+
+  function norm(s) {
+    return ' ' + String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/-/g, '').replace(/[^a-z0-9.]+/g, ' ').trim() + ' ';
+  }
+  function past(tekst, woorden) {
+    for (var i = 0; i < woorden.length; i++) {
+      var w = woorden[i];
+      if (w.length <= 3 ? tekst.indexOf(' ' + w) === -1 : tekst.indexOf(w) === -1) return false;
+    }
+    return true;
+  }
+  function tel(n, een, meer) { return n + ' ' + (n === 1 ? een : meer); }
+  function el(tag, cls, tekst) { var e = document.createElement(tag); if (cls) e.className = cls; if (tekst != null) e.textContent = tekst; return e; }
+  function link(href, tekst, cls) { var a = el('a', cls, tekst); a.href = href; return a; }
+  function chip(n) {
+    var m = M[n.k + '/' + n.id]; var a = link('#' + n.k + '/' + n.id, K[n.k].naam + ' ' + n.id, 'chip' + (n.via === 'trefwoord' ? ' tw' : ''));
+    if (m) a.title = m.titel + (n.sterkte ? ' (' + n.sterkte + ')' : '') + (n.via === 'trefwoord' ? ' (op trefwoord)' : '');
+    return a;
+  }
+  function chips(lijst, max) {
+    var d = el('div', 'chips'); var gezien = {};
+    lijst.forEach(function (n) { var s = n.k + '/' + n.id; if (gezien[s] || Object.keys(gezien).length >= (max || 10)) return; gezien[s] = 1; d.appendChild(chip(n)); });
+    var rest = Object.keys(lijst.reduce(function (a, n) { a[n.k + '/' + n.id] = 1; return a; }, {})).length - Object.keys(gezien).length;
+    if (rest > 0) d.appendChild(el('span', 'klein', 'en ' + rest + ' meer'));
+    return d;
+  }
+  function tellers(m) {
+    var bewijs = m.bewijs.filter(function (r) { return r.sterkte !== 'raakvlak'; }).length;
+    var practices = (m.overheid || []).reduce(function (s, o) { return s + o.practices.length; }, 0);
+    return {bewijs: bewijs, doen: m.doen.length + practices, tw: m.trefwoord.length};
+  }
+
+  function kaderTabs(actief) {
+    tabs.textContent = '';
+    D.kaders.forEach(function (k) { tabs.appendChild(link('#' + k.id, k.naam, k.id === actief ? 'aan' : '')); });
+  }
+
+  function overzicht(kid) {
+    kaderTabs(kid); inhoud.textContent = '';
+    var k = K[kid];
+    var kop = el('p', 'klein'); kop.appendChild(document.createTextNode(k.naam + ', ' + k.sub + '. Bron: '));
+    kop.appendChild(link(k.bron.url, k.bron.naam)); inhoud.appendChild(kop);
+    var ul = el('ul', 'lijst');
+    D.maatregelen.filter(function (m) { return m.k === kid; }).forEach(function (m) {
+      var t = tellers(m); var li = el('li'); var a = link('#' + m.k + '/' + m.id, null, 'rij');
+      a.appendChild(el('span', 'nr', m.id));
+      var tt = el('span', 'tt', m.titel); if (m.thema) { tt.appendChild(el('br')); tt.appendChild(el('span', 'thema', m.thema)); } a.appendChild(tt);
+      var b = el('span', 'badges');
+      if (t.bewijs) b.appendChild(el('span', 'badge b', t.bewijs + ' bewijs'));
+      if (t.doen) b.appendChild(el('span', 'badge d', t.doen + ' te doen'));
+      if (t.tw) b.appendChild(el('span', 'badge', t.tw + ' op trefwoord'));
+      if (!t.bewijs && !t.doen && !t.tw) b.appendChild(el('span', 'badge w', 'nog niets'));
+      a.appendChild(b); li.appendChild(a); ul.appendChild(li);
+    });
+    inhoud.appendChild(ul);
+  }
+
+  function blok(titel) { var b = el('section', 'blok'); b.appendChild(el('h2', null, titel)); inhoud.appendChild(b); return b; }
+
+  function detail(m) {
+    kaderTabs(m.k); inhoud.textContent = '';
+    var k = K[m.k];
+    inhoud.appendChild(link('#' + m.k, '‹ alle maatregelen van ' + k.naam, 'terug'));
+    var kop = el('div', 'detailkop'); kop.appendChild(el('span', 'nr', k.naam + ' ' + m.id)); kop.appendChild(el('h1', null, m.titel));
+    if (m.thema) kop.appendChild(el('div', 'klein', m.thema)); inhoud.appendChild(kop);
+
+    // 1. Wat de norm vraagt
+    var b1 = blok('1. Wat de norm vraagt');
+    if (m.kern) b1.appendChild(el('p', null, m.kern));
+    if (m.artikel) b1.appendChild(el('p', 'klein', m.artikel));
+    if (m.k === 'bio2') {
+      var p = el('p'); p.appendChild(document.createTextNode('ISO 27001:2022, bijlage A, maatregel ' + m.id + ' heeft hetzelfde nummer. De BIO voegt daar ' + (m.overheid.length === 1 ? 'overheidsmaatregel ' : 'de overheidsmaatregelen ') + m.overheid.map(function (o) { return o.id; }).join(', ') + ' aan toe; de tekst staat bij het CIP: '));
+      p.appendChild(link(D.adressen.bio_practices, 'BIO Practices')); p.appendChild(document.createTextNode(' (zoek op het nummer).')); b1.appendChild(p);
+    } else if (m.url) {
+      var p2 = el('p'); p2.appendChild(link(m.url, 'Lees de tekst bij de bron')); b1.appendChild(p2);
+    } else {
+      var p3 = el('p', 'klein'); p3.appendChild(document.createTextNode('Deze maatregel heeft bij de bron geen eigen adres. ')); p3.appendChild(link(k.bron.url, k.bron.naam)); b1.appendChild(p3);
+    }
+
+    // 2. Wat je eraan kunt doen
+    var b2 = blok('2. Wat je eraan kunt doen'); var iets = false;
+    (m.overheid || []).forEach(function (o) {
+      if (!o.practices.length) return; iets = true;
+      b2.appendChild(el('h3', null, 'Practices bij overheidsmaatregel ' + o.id + ' (CIP)'));
+      var ul = el('ul'); o.practices.forEach(function (pr) { var li = el('li'); li.appendChild(link(pr.url, pr.titel)); li.appendChild(el('span', 'wie', pr.code + ' · NORA Online')); ul.appendChild(li); }); b2.appendChild(ul);
+    });
+    if (m.doen.length) {
+      iets = true; b2.appendChild(el('h3', null, 'Handleidingen in de kennisbank'));
+      var ul2 = el('ul'); m.doen.forEach(function (d) { var li = el('li'); li.appendChild(link(d.url, d.titel)); li.appendChild(el('span', 'wie', 'bij barriere: ' + (D.barrieres[d.via] ? D.barrieres[d.via].titel : d.via))); ul2.appendChild(li); }); b2.appendChild(ul2);
+    }
+    if (m.trefwoord.length) {
+      iets = true; var h = el('h3', null, 'Stukken op trefwoord '); h.appendChild(el('span', 'voorstel', 'gevonden op titel, niet getoetst')); b2.appendChild(h);
+      var ul3 = el('ul'); m.trefwoord.forEach(function (d) { var li = el('li'); li.appendChild(link(d.url, d.titel)); li.appendChild(el('span', 'wie', d.wie)); if (d.slot) li.appendChild(el('span', 'slot', 'inlog: ' + d.slot)); ul3.appendChild(li); }); b2.appendChild(ul3);
+      if (m.meer_trefwoord) b2.appendChild(el('p', 'klein', 'En ' + m.meer_trefwoord + ' meer; zoek hierboven op het onderwerp.'));
+    }
+    if (!iets) b2.appendChild(el('p', 'leeg', 'Hier ligt nog niets. Weet je een goede handreiking, sjabloon of practice? Meld hem in de kennisbank; dat mag zonder naam.'));
+
+    // 3. Zo toon je het aan
+    var b3 = blok('3. Zo toon je het aan');
+    var sterk = m.bewijs.filter(function (r) { return r.sterkte !== 'raakvlak'; }), raak = m.bewijs.filter(function (r) { return r.sterkte === 'raakvlak'; });
+    if (sterk.length) {
+      var intro = el('p', 'klein'); intro.appendChild(document.createTextNode('Barrieres uit de ')); intro.appendChild(link(D.adressen.zelfcheck, 'zelfcheck aanvalspaden')); intro.appendChild(document.createTextNode(' die bewijs leveren voor deze maatregel:')); b3.appendChild(intro);
+      var ul4 = el('ul'); sterk.forEach(function (r) {
+        var bb = D.barrieres[r.b] || {titel: r.b, meting: []}; var li = el('li'); li.appendChild(el('b', null, bb.titel)); li.appendChild(el('span', 'sterkte ' + r.sterkte, r.sterkte));
+        li.appendChild(el('div', 'klein', r.reden));
+        if (bb.meting && bb.meting.length) { var mt = el('div', 'klein'); mt.appendChild(document.createTextNode('Meetbaar uit je eigen exports in de ')); mt.appendChild(link(D.adressen.meting, 'meting')); mt.appendChild(document.createTextNode(': ' + bb.meting.map(function (x) { return x.id + ' ' + x.label; }).join('; '))); li.appendChild(mt); }
+        ul4.appendChild(li);
+      }); b3.appendChild(ul4);
+    } else { b3.appendChild(el('p', 'leeg', 'Geen barriere uit de zelfcheck levert hier bewijs voor. Dit is vaak een organisatorische maatregel: het bewijs is een vastgesteld stuk, een procedure of een registratie.')); }
+    if (raak.length) { b3.appendChild(el('p', 'klein', 'Raakt aan, maar telt niet als bewijs: ' + raak.map(function (r) { return (D.barrieres[r.b] || {titel: r.b}).titel; }).join('; ') + '.')); }
+
+    // 4. Wat hier nog ontbreekt
+    var b4 = blok('4. Wat hier nog ontbreekt'); var mist = [];
+    if (!sterk.length) mist.push('bewijs uit de zelfcheck');
+    if (!m.doen.length) mist.push('een handleiding in de kennisbank');
+    if (m.k === 'bio2' && !(m.overheid || []).some(function (o) { return o.practices.length; })) mist.push('practices van het CIP');
+    b4.appendChild(el('p', mist.length ? null : 'klein', mist.length ? 'Nog niet: ' + mist.join(', ') + '.' : 'Alle drie de soorten zijn er. Mis je toch iets, meld het in de kennisbank.'));
+    window.scrollTo(0, 0);
+  }
+
+  function zoek(term) {
+    tabs.textContent = ''; inhoud.textContent = '';
+    var w = norm(term).trim().split(' ').filter(Boolean);
+    var res = el('div', 'resultaat');
+    var ms = D.maatregelen.filter(function (m) { return past(norm(K[m.k].naam + ' ' + m.id + ' ' + m.titel + ' ' + m.thema + ' ' + (m.kern || '') + ' ' + (m.artikel || '')), w); });
+    var bs = Object.keys(D.barrieres).filter(function (id) { var b = D.barrieres[id]; return past(norm(b.titel + ' ' + b.claim), w); });
+    var ss = D.stukken.filter(function (s) { return past(norm(s.titel + ' ' + s.wie), w); });
+    hint.textContent = tel(ms.length, 'maatregel', 'maatregelen') + ', ' + tel(bs.length, 'barriere', 'barrieres') + ' uit de zelfcheck en ' + tel(ss.length, 'stuk', 'stukken') + '.';
+    if (ms.length) {
+      res.appendChild(el('h2', null, 'Maatregelen'));
+      ms.slice(0, 40).forEach(function (m) { var r = el('div', 'res'); r.appendChild(link('#' + m.k + '/' + m.id, K[m.k].naam + ' ' + m.id + ': ' + m.titel, 't')); var t = tellers(m); r.appendChild(el('div', 'klein', (t.bewijs ? t.bewijs + ' bewijs · ' : '') + (t.doen ? t.doen + ' te doen · ' : '') + (m.thema || ''))); res.appendChild(r); });
+    }
+    if (bs.length) {
+      res.appendChild(el('h2', null, 'Wat je doet: barrieres uit de zelfcheck'));
+      bs.forEach(function (id) { var b = D.barrieres[id]; var r = el('div', 'res'); r.appendChild(el('span', 't', b.titel)); r.appendChild(el('div', 'klein', 'Levert bewijs voor:')); r.appendChild(chips(b.normen.filter(function (n) { return n.sterkte !== 'raakvlak'; }), 12)); res.appendChild(r); });
+    }
+    if (ss.length) {
+      res.appendChild(el('h2', null, 'Wat je doet: handleidingen en stukken van anderen'));
+      ss.slice(0, 40).forEach(function (s) { var r = el('div', 'res'); r.appendChild(link(s.url, s.titel, 't')); r.appendChild(el('span', 'wie', s.wie)); if (s.normen.length) r.appendChild(chips(s.normen, 8)); else r.appendChild(el('div', 'klein', 'Nog aan geen maatregel gekoppeld.')); res.appendChild(r); });
+      if (ss.length > 40) res.appendChild(el('p', 'klein', 'En ' + (ss.length - 40) + ' meer; maak de zoekterm specifieker.'));
+    }
+    if (!ms.length && !bs.length && !ss.length) res.appendChild(el('p', 'leeg', 'Niets gevonden. Probeer een ander woord of een nummer, zoals 8.15.'));
+    inhoud.appendChild(res);
+  }
+
+  function route() {
+    var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (q.value.trim() && !h) { zoek(q.value); return; }
+    if (M[h]) { hint.textContent = 'Zoek op nummer, onderwerp of wat je doet.'; detail(M[h]); return; }
+    hint.textContent = 'Zoek op nummer, onderwerp of wat je doet. Of kies hieronder een kader.';
+    overzicht(K[h] ? h : 'bio2');
+  }
+  q.addEventListener('input', function () {
+    if (q.value.trim()) { if (location.hash) history.replaceState(null, '', location.pathname + location.search); zoek(q.value); }
+    else route();
+  });
+  window.addEventListener('hashchange', function () { q.value = ''; route(); });
+  route();
+})();
+</script>
+</body>
+</html>
