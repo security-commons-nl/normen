@@ -21,8 +21,8 @@ import pytest
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATASETS = ["bio2.json", "bio2-domeinen.json", "nist-csf.json", "wpg.json", "avg.json",
             "schema.json", "bio-practices.json", "trefwoorden.json"]
-# Geen dataset maar een pagina: gaat wel mee naar dist, en wordt niet als JSON gelezen.
-PAGINAS = ["normwijzer.html"]
+# Geen download: de normwijzer en de zoekindex voor de voorpagina. Gaan wel mee naar dist.
+PAGINAS = ["normwijzer.html", "zoekindex.json"]
 
 
 def gedeelde_build() -> pathlib.Path | None:
