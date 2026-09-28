@@ -1,6 +1,6 @@
 {
  "titel": "Trefwoorden per maatregel voor de normwijzer",
- "toelichting": "Per maatregel de woorden waarmee de normwijzer stukken van anderen en uit de kennisbank vindt die over hetzelfde gaan. Een treffer op trefwoord is een voorstel, geen oordeel: de pagina zegt dat erbij. Kies woorden die specifiek zijn voor de maatregel; een algemeen woord als 'beleid' of 'informatiebeveiliging' vindt alles en daarmee niets. Woorden van drie letters of minder tellen alleen aan het begin van een woord.",
+ "toelichting": "Per maatregel de woorden waarmee de normwijzer stukken van anderen en uit de kennisbank vindt die over hetzelfde gaan. De lijst is op 28-09-2026 vastgesteld door de maintainer. Een treffer is automatisch: het stuk zelf wordt niet per stuk beoordeeld, en de pagina zegt dat erbij. Kies woorden die specifiek zijn voor de maatregel; een algemeen woord als 'beleid' of 'informatiebeveiliging' vindt alles en daarmee niets. Woorden van drie letters of minder tellen alleen aan het begin van een woord.",
  "bio2": {
   "5.1": [
    "informatiebeveiligingsbeleid",

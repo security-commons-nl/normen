@@ -74,7 +74,7 @@ eraan kunt doen, hoe je het aantoont, en wat er nog ontbreekt.
 | Bestand | Wat |
 |---|---|
 | [`bio-practices.json`](bio-practices.json) | Per BIO-overheidsmaatregel de practices die het CIP op BIO Practices noemt (102 van de 148, 248 verwijzingen op 26-09-2026). Alleen code en adres, geen tekst |
-| [`trefwoorden.json`](trefwoorden.json) | Per maatregel de woorden waarmee de normwijzer stukken uit de kennisbank en het bronnenregister vindt. Een treffer staat als voorstel op de pagina |
+| [`trefwoorden.json`](trefwoorden.json) | Per maatregel de woorden waarmee de normwijzer stukken uit de kennisbank en het bronnenregister vindt. Vastgesteld door de maintainer (28-09-2026); een treffer is automatisch en staat zo op de pagina |
 | `site/normwijzer-sjabloon.html` | De pagina zelf; de data wordt er bij het bouwen in gezet |
 
 Een barriere **levert bewijs voor** een maatregel, zoals in de mappingen. De normwijzer zegt nooit dat je

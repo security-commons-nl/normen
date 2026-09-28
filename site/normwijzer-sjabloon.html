@@ -77,7 +77,7 @@ h1{font-size:28px;margin:0 0 4px;color:var(--accent)}
   <p class="hint" id="hint">Zoek op nummer, onderwerp of wat je doet. Of kies hieronder een kader.</p>
   <nav class="tabs" id="tabs"></nav>
   <main id="inhoud"></main>
-  <p class="voet">Een barriere uit de zelfcheck <b>levert bewijs voor</b> een maatregel; of je aan de norm voldoet, beoordeelt de auditor. De koppelingen zijn een onderbouwd voorstel en wachten op toetsing door vakgenoten. Een treffer <i>op trefwoord</i> is gevonden op de titel en niet door een mens beoordeeld. Er staat geen normtekst op deze pagina; die staat bij de bron. Bron van deze pagina: <a href="https://github.com/security-commons-nl/normen">github.com/security-commons-nl/normen</a> · EUPL-1.2.</p>
+  <p class="voet">Een barriere uit de zelfcheck <b>levert bewijs voor</b> een maatregel; of je aan de norm voldoet, beoordeelt de auditor. De koppelingen zijn een onderbouwd voorstel en wachten op toetsing door vakgenoten. Stukken <i>op trefwoord</i> zijn automatisch gevonden met de vastgestelde trefwoorden per maatregel; het stuk zelf is niet per stuk beoordeeld. Er staat geen normtekst op deze pagina; die staat bij de bron. Bron van deze pagina: <a href="https://github.com/security-commons-nl/normen">github.com/security-commons-nl/normen</a> · EUPL-1.2.</p>
 </div>
 <script>
 var D = /*NORMWIJZER_DATA*/;
@@ -178,7 +178,7 @@ var D = /*NORMWIJZER_DATA*/;
       var ul2 = el('ul'); m.doen.forEach(function (d) { var li = el('li'); li.appendChild(link(d.url, d.titel)); li.appendChild(el('span', 'wie', 'bij barriere: ' + (D.barrieres[d.via] ? D.barrieres[d.via].titel : d.via))); ul2.appendChild(li); }); b2.appendChild(ul2);
     }
     if (m.trefwoord.length) {
-      iets = true; var h = el('h3', null, 'Stukken op trefwoord '); h.appendChild(el('span', 'voorstel', 'gevonden op titel, niet getoetst')); b2.appendChild(h);
+      iets = true; var h = el('h3', null, 'Stukken op trefwoord '); h.appendChild(el('span', 'voorstel', 'automatisch gevonden')); b2.appendChild(h);
       var ul3 = el('ul'); m.trefwoord.forEach(function (d) { var li = el('li'); li.appendChild(link(d.url, d.titel)); li.appendChild(el('span', 'wie', d.wie)); if (d.slot) li.appendChild(el('span', 'slot', 'inlog: ' + d.slot)); ul3.appendChild(li); }); b2.appendChild(ul3);
       if (m.meer_trefwoord) b2.appendChild(el('p', 'klein', 'En ' + m.meer_trefwoord + ' meer; zoek hierboven op het onderwerp.'));
     }
