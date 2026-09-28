@@ -206,3 +206,8 @@ def test_zoekindex_is_actueel(data):
 def test_de_pagina_draagt_de_zoekindex_niet_mee(data):
     """De index is een los bestand; in de pagina zou hij 130 kB dubbel meeslepen."""
     assert '"_zoekindex"' not in bouw.pagina(data)
+
+
+def test_de_normwijzer_wijst_naar_de_weergave_per_aanvalspad():
+    """De normverankering in aanvalspaden is de weergave per barriere; de twee pagina's wijzen naar elkaar."""
+    assert 'href="https://security-commons-nl.github.io/aanvalspaden/normen/"' in SJABLOON
