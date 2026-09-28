@@ -97,6 +97,12 @@ def raakt(tekst_norm: str, woord: str) -> bool:
     return f" {w} " in tekst_norm if len(w) <= 3 else w in tekst_norm
 
 
+def volle_samenvatting(kop: str) -> str:
+    """De samenvatting uit de frontmatter, ook als hij over meer regels doorloopt (ingesprongen vervolg)."""
+    m = re.search(r"^samenvatting:[ \t]*(.*(?:\n[ \t]+.*)*)", kop, re.M)
+    return " ".join(m.group(1).split()).strip("\"'>| ") if m else ""
+
+
 # ----------------------------------------------------------------------------- bouwen
 def verzamel() -> dict:
     ap, kb = buur("aanvalspaden"), buur("kennisbank")
@@ -141,7 +147,7 @@ def verzamel() -> dict:
         samenvatting = re.search(r"^samenvatting:\s*(.+)$", kop, re.M)
         if titel:
             stukken.append({"titel": titel.group(1).strip(), "url": f"{KB_SITE}/{vak}/{item}/", "wie": "kennisbank",
-                            "_samenvatting": samenvatting.group(1).strip() if samenvatting else "",
+                            "_samenvatting": vak + " " + volle_samenvatting(kop),
                             "_zoek": norm(titel.group(1) + " " + (samenvatting.group(1) if samenvatting else ""))})
     for bid, b in register["bronnen"].items():
         if b.get("vervallen"):
