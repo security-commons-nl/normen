@@ -176,3 +176,33 @@ def test_de_gebouwde_pagina_is_actueel(data):
     gebouwd = uit.read_text(encoding="utf-8")
     assert "/*NORMWIJZER_DATA*/" not in gebouwd
     assert '"maatregelen":' in gebouwd
+
+
+# ----------------------------------------------------------------------------- zoekvak voorpagina
+def test_zoekindex_voor_de_voorpagina(data):
+    """Het zoekvak op security-commons-nl.github.io haalt zoekindex.json op; dat moet alles bevatten.
+
+    Elk stuk uit de kennisbank en het register, elke maatregel, en de synoniemen van het register. Zonder de
+    zoekwoorden van de partij vindt "vng beleid" het beleidssjabloon van de IBD niet.
+    """
+    index = data["_zoekindex"]
+    assert len(index["stukken"]) == len(data["stukken"])
+    assert len(index["normen"]) == len(data["maatregelen"])
+    assert set(index["kaders"]) == {k["id"] for k in bouw.KADERS}
+    assert index["synoniemen"], "synoniemen uit het register ontbreken"
+    assert any("VNG" in s.get("z", "") for s in index["stukken"] if s["w"] != "kennisbank")
+    assert all(s["u"].startswith("https://") for s in index["stukken"])
+    ids = {(m["k"], m["id"]) for m in data["maatregelen"]}
+    assert all((n["k"], n["id"]) in ids for n in index["normen"])
+
+
+def test_zoekindex_is_actueel(data):
+    """De voorpagina leest het bestand live; loopt het achter, dan zoekt de bezoeker in oude inhoud."""
+    uit = ROOT / "zoekindex.json"
+    assert uit.exists(), "draai python tools/bouw_normwijzer.py"
+    assert json.loads(uit.read_text(encoding="utf-8")) == data["_zoekindex"]
+
+
+def test_de_pagina_draagt_de_zoekindex_niet_mee(data):
+    """De index is een los bestand; in de pagina zou hij 130 kB dubbel meeslepen."""
+    assert '"_zoekindex"' not in bouw.pagina(data)

@@ -3,7 +3,10 @@
 
 Aanroep:
     python tools/bouw_normwijzer.py          # bouwt normwijzer.html
-    python tools/bouw_normwijzer.py --check  # exit 1 als normwijzer.html niet overeenkomt met de bronnen
+    python tools/bouw_normwijzer.py --check  # exit 1 als normwijzer.html of zoekindex.json achterloopt
+
+Naast de pagina schrijft het zoekindex.json: dezelfde stukken en maatregelen, klein genoeg voor het zoekvak op
+de voorpagina van de commons (security-commons-nl.github.io), dat dit bestand ophaalt bij het zoeken.
 
 De pagina voegt drie repo's samen, en maakt geen eigen oordeel:
 - `normen` (deze repo): de kaders, de practices van het CIP per BIO-overheidsmaatregel
@@ -30,6 +33,7 @@ import unicodedata
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SJABLOON = ROOT / "site" / "normwijzer-sjabloon.html"
 UIT = ROOT / "normwijzer.html"
+ZOEKINDEX = ROOT / "zoekindex.json"
 KB_SITE = "https://security-commons-nl.github.io/kennisbank"
 ZELFCHECK = "https://security-commons-nl.github.io/aanvalspaden/"
 METING = "https://security-commons-nl.github.io/aanvalspaden/meting/"
@@ -137,12 +141,14 @@ def verzamel() -> dict:
         samenvatting = re.search(r"^samenvatting:\s*(.+)$", kop, re.M)
         if titel:
             stukken.append({"titel": titel.group(1).strip(), "url": f"{KB_SITE}/{vak}/{item}/", "wie": "kennisbank",
+                            "_samenvatting": samenvatting.group(1).strip() if samenvatting else "",
                             "_zoek": norm(titel.group(1) + " " + (samenvatting.group(1) if samenvatting else ""))})
     for bid, b in register["bronnen"].items():
         if b.get("vervallen"):
             continue
         p = ptn.get(b["partij"])
         stukken.append({"titel": b["titel"], "url": b["url"], "wie": p["naam"] if p else b["partij"],
+                        "_extra": " ".join(register.get("zoekwoorden", {}).get(b["partij"], [])),
                         "slot": b.get("kring") if b.get("toegang") == "inlog" else None, "_zoek": norm(b["titel"])})
 
     maatregelen: list[dict] = []
@@ -206,12 +212,35 @@ def verzamel() -> dict:
     stukken_uit = [{k2: v for k2, v in s.items() if not k2.startswith("_")} | {"normen": stuk_normen.get(s["url"], [])}
                    for s in stukken]
 
+    # Voor het zoekvak op de voorpagina: kort per regel, zonder de ketens. "z" is extra zoektekst die niet op het
+    # scherm staat (samenvatting, zoekwoorden van de partij, trefwoorden van de maatregel).
+    zoek_stukken = []
+    for s in stukken:
+        r = {"t": s["titel"], "u": s["url"], "w": s["wie"]}
+        z = " ".join(x for x in (s.get("_samenvatting", ""), s.get("_extra", "")) if x)
+        if z:
+            r["z"] = z
+        if s.get("slot"):
+            r["slot"] = s["slot"]
+        zoek_stukken.append(r)
+    zoek_normen = []
+    for m in maatregelen:
+        r = {"k": m["k"], "id": m["id"], "t": m["titel"]}
+        z = " ".join(x for x in (m.get("artikel", ""), m.get("thema", ""), m["zoek"]) if x)
+        if z:
+            r["z"] = z
+        zoek_normen.append(r)
+    zoekindex = {"kaders": {k["id"]: k["naam"] for k in KADERS}, "synoniemen": register.get("synoniemen", []),
+                 "stukken": zoek_stukken, "normen": zoek_normen}
+
     return {"kaders": KADERS, "maatregelen": maatregelen, "barrieres": barrieres, "stukken": stukken_uit,
-            "adressen": {"zelfcheck": ZELFCHECK, "meting": METING, "bio_practices": BIO_PRACTICES}}
+            "adressen": {"zelfcheck": ZELFCHECK, "meting": METING, "bio_practices": BIO_PRACTICES},
+            "_zoekindex": zoekindex}
 
 
 def pagina(data: dict) -> str:
     sjabloon = SJABLOON.read_text(encoding="utf-8")
+    data = {k: v for k, v in data.items() if not k.startswith("_")}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     if "/*NORMWIJZER_DATA*/" not in sjabloon:
         raise SystemExit("Het sjabloon mist /*NORMWIJZER_DATA*/")
@@ -222,6 +251,7 @@ def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     data = verzamel()
     html = pagina(data)
+    index = json.dumps(data["_zoekindex"], ensure_ascii=False, separators=(",", ":")) + "\n"
     per_k = {}
     for m in data["maatregelen"]:
         per_k.setdefault(m["k"], [0, 0, 0])
@@ -234,9 +264,13 @@ def main() -> int:
         if not UIT.exists() or UIT.read_text(encoding="utf-8") != html:
             print("normwijzer.html loopt achter; draai python tools/bouw_normwijzer.py")
             return 1
+        if not ZOEKINDEX.exists() or ZOEKINDEX.read_text(encoding="utf-8") != index:
+            print("zoekindex.json loopt achter; draai python tools/bouw_normwijzer.py")
+            return 1
         return 0
     UIT.write_bytes(html.encode("utf-8"))
-    print(f"Geschreven: {UIT.name} ({len(html) // 1024} kB)")
+    ZOEKINDEX.write_bytes(index.encode("utf-8"))
+    print(f"Geschreven: {UIT.name} ({len(html) // 1024} kB) en {ZOEKINDEX.name} ({len(index) // 1024} kB)")
     return 0
 
 

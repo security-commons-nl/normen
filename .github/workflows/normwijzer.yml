@@ -40,13 +40,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- normwijzer.html; then
+          if git diff --quiet -- normwijzer.html zoekindex.json; then
             echo "Normwijzer ongewijzigd."
             exit 0
           fi
           git config user.name "normwijzer-bot"
           git config user.email "normwijzer-bot@users.noreply.github.com"
-          git add normwijzer.html
+          git add normwijzer.html zoekindex.json
           git commit -m "normwijzer: dagelijks bijgewerkt uit aanvalspaden en kennisbank"
           git push
           gh workflow run pages.yml
