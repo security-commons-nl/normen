@@ -17,7 +17,7 @@ De pagina voegt drie repo's samen, en maakt geen eigen oordeel:
 Lokaal staan de andere repo's als buurmap; in CI worden ze uitgecheckt in _aanvalspaden en _kennisbank.
 
 De relatie blijft die van de mappingen: een barriere levert bewijs voor een maatregel. Een treffer op
-trefwoord is een voorstel en staat zo op de pagina. Normtekst van ISO, NEN of het CIP komt er niet in.
+trefwoord is automatisch gevonden met vastgestelde trefwoorden en staat zo op de pagina. Normtekst van ISO, NEN of het CIP komt er niet in.
 """
 from __future__ import annotations
 
