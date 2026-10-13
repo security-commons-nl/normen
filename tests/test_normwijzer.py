@@ -34,6 +34,14 @@ def buren_aanwezig() -> bool:
         return False
 
 
+def bio2_kopie_loopt_gelijk() -> bool:
+    """aanvalspaden neemt bio2.json van normen over (tools/haal_normen.py daar). Tussen een nieuwe versie hier
+    en de overname daar lopen de twee even uiteen; dan zeggen de tests op de gebouwde BIO-data niets."""
+    kopie = bouw.buur("aanvalspaden") / "mappingen" / "bronnen" / "bio2.json"
+    eigen = json.loads((ROOT / "bio2.json").read_text(encoding="utf-8"))
+    return json.loads(kopie.read_text(encoding="utf-8"))["bron"].get("vingerafdruk_normen") == eigen["vingerafdruk"]
+
+
 # ----------------------------------------------------------------------------- eigen data
 def test_trefwoorden_horen_bij_een_bestaande_maatregel():
     """Een trefwoord bij een nummer dat niet bestaat, doet stil niets."""
@@ -117,10 +125,15 @@ def test_alle_maatregelen_van_de_vier_kaders(data):
     tel = {}
     for m in data["maatregelen"]:
         tel[m["k"]] = tel.get(m["k"], 0) + 1
-    assert tel == {"bio2": 89, "nist-csf": 106, "avg": 32, "wpg": 36}
+    if not bio2_kopie_loopt_gelijk():
+        pytest.skip("aanvalspaden heeft de huidige bio2.json van normen nog niet overgenomen")
+    iso = {m["id"].rsplit(".", 1)[0] for m in json.loads((ROOT / "bio2.json").read_text(encoding="utf-8"))["maatregelen"]}
+    assert tel == {"bio2": len(iso), "nist-csf": 106, "avg": 32, "wpg": 36}
 
 
 def test_elke_bio_maatregel_draagt_zijn_overheidsmaatregelen_met_practices(data):
+    if not bio2_kopie_loopt_gelijk():
+        pytest.skip("aanvalspaden heeft de huidige bio2.json van normen nog niet overgenomen")
     bio = [m for m in data["maatregelen"] if m["k"] == "bio2"]
     ids = {o["id"] for m in bio for o in m["overheid"]}
     assert ids == set(PRACTICES["practices"])

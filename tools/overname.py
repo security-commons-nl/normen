@@ -3,7 +3,9 @@
 
 Dit script bestaat om de herkomst reproduceerbaar te maken: draai het opnieuw op dezelfde commits en je
 krijgt dezelfde bestanden. Na de overname is `normen` de bron; een latere versie van een kader komt
-binnen via de generator van dat kader (tools/genereer_*.py), niet via dit script.
+binnen via de generator van dat kader (tools/genereer_*.py), niet via dit script. Voor BIO 2.0 is dat sinds
+13-10-2026 tools/genereer_bio2.py (versie 1.3, rechtstreeks uit de pdf van het CIP); de fixture van de
+overname is toen vervallen.
 
 Wat het doet:
 - `bio2.json`: de 148 overheidsmaatregelen uit `cisochat/data/bio2.json`, alleen nummer, titel en thema

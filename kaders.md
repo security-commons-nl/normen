@@ -4,29 +4,29 @@ Gegenereerd door `tools/controleer.py` uit de JSON-bestanden in deze repo; wijzi
 
 ## BIO 2.0 (`bio2.json`)
 
-De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, genummerd volgens de structuur van ISO 27002:2022 (5.01.01 hoort bij ISO-maatregel 5.1). Per maatregel het nummer, de titel en het thema (de IV-standaard). De tekst van de overheidsmaatregel staat er niet bij: het CIP publiceert onder CC BY-NC-SA 4.0, en de ISO-tekst eronder is van NEN/ISO. Wie de tekst nodig heeft, gaat naar de bron; het nummer hier is ook het nummer daar.
+De 157 nummers die in deel 2 van de Baseline Informatiebeveiliging Overheid 2.0 gelden: 117 overheidsmaatregelen en 40 ISO-beheersmaatregelen zonder overheidsmaatregel (veld soort: overheid of alleen-iso). Genummerd volgens ISO 27002:2022 (5.01.01 hoort bij ISO-maatregel 5.1). Per nummer de titel van de ISO-beheersmaatregel en het thema (de IV-standaard). De tekst van de overheidsmaatregel staat er niet bij: het CIP publiceert onder CC BY-NC-SA 4.0, en de ISO-tekst eronder is van NEN/ISO. Wie de tekst nodig heeft, gaat naar de bron; het nummer hier is ook het nummer daar.
 
-- **Bron:** Centrum Informatiebeveiliging en Privacybescherming (CIP), BIO2 v1.3 definitief - 9 januari 2026, [link](https://www.cip-overheid.nl/)
+- **Bron:** Centrum Informatiebeveiliging en Privacybescherming (CIP), BIO2 v1.3 definitief - 9 januari 2026, [link](https://www.bio-overheid.nl/bio2/)
 - **Licentie van de bron:** CC BY-NC-SA 4.0 (CIP). Daarom staan hier alleen nummers, titels en thema's; de tekst van de overheidsmaatregelen en de ISO-tekst zijn niet opgenomen
-- **Opgehaald:** 2026-09-02
-- **Records:** 148 · **Vingerafdruk:** `1c0b27a8841e2854`
+- **Opgehaald:** 2026-10-13
+- **Records:** 157 · **Vingerafdruk:** `0c6598e63db21a7c`
 
 | Id | Titel | Thema |
 |---|---|---|
 | 5.01.01 | Informatiebeveiligingsbeleid | IV-beleid |
-| 5.01.02 | Beleidsregels voor informatie beveiliging | IV-beleid |
+| 5.01.02 | Informatiebeveiligingsbeleid | IV-beleid |
 | 5.02.01 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |
 | 5.02.02 | Rollen en verantwoordelijkheden bij informatiebeveiliging | IV-beleid |
 | 5.03.01 | Functiescheiding | IV-beleid |
 | 5.04.01 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
-| 5.04.02 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
-| 5.04.03 | Managementverantwoordelijkheden | Screening, bewustzijn & opleiding |
 | 5.05.01 | Contact met overheidsinstanties | IV-beleid |
 | 5.06.01 | Contact met speciale belangengroepen | IV-beleid |
 | 5.07.01 | Informatie en analyses over dreigingen | IV-beleid |
 | 5.08.01 | Informatiebeveiliging in projectmanagement | Informatiebeveiliging binnen projecten |
 | 5.09.01 | Inventarisatie van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
 | 5.10.01 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
+| 5.10.02 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
+| 5.10.03 | Aanvaardbaar gebruik van informatie en andere gerelateerde bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
 | 5.11.01 | Retourneren van bedrijfsmiddelen | Bedrijfsmiddelenbeheer |
 | 5.12.01 | Classificeren van informatie | Informatie classificatie |
 | 5.13.01 | Labelen van informatie | Informatie classificatie |
@@ -47,9 +47,13 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 5.20.01 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
 | 5.20.02 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
 | 5.20.03 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.20.04 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.20.05 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
+| 5.20.06 | Adresseren van informatiebeveiliging in leveranciersovereenkomsten | Leveranciersbeheer - Inkoop |
 | 5.21.02 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - Inkoop |
 | 5.21.03 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
 | 5.21.04 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
+| 5.21.05 | Beheren van informatiebeveiliging in de ICT-toeleveringsketen | Leveranciersbeheer - contractbeheer |
 | 5.22.01 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer |
 | 5.22.02 | Monitoren, beoordelen en het beheren van wijzigingen van leveranciersdiensten | Leveranciersbeheer - contractbeheer |
 | 5.23.01 | Informatiebeveiliging voor het gebruik van clouddiensten | Leveranciersbeheer - contractbeheer |
@@ -58,12 +62,12 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 5.24.03 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
 | 5.24.04 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
 | 5.24.05 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.24.06 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
 | 5.24.07 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
-| 5.25.01 | Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen | Security Incident Management |
-| 5.26.01 | Reageren op informatiebeveiligings-incidenten | Security Incident Management |
+| 5.24.08 | Plannen en voorbereiden van het beheer van informatie-beveiligingsincidenten | Security Incident Management |
+| 5.25.02 | Beoordelen van en besluiten over informatiebeveiligingsgebeurtenissen | Security Incident Management |
+| 5.26.02 | Reageren op informatiebeveiligings-incidenten | Security Incident Management |
 | 5.27.01 | Leren van informatiebeveiligingsincidenten | Security Incident Management |
-| 5.27.02 | Verzamelen van bewijsmateriaal | Security Incident Management |
+| 5.27.02 | Leren van informatiebeveiligingsincidenten | Security Incident Management |
 | 5.28.01 | Verzamelen van bewijsmateriaal | Security Incident Management |
 | 5.29.01 | Informatiebeveiliging tijdens een verstoring | Business Continuity & Disaster Recovery |
 | 5.30.01 | ICT-gereedheid voor bedrijfscontinuïteit | Business Continuity & Disaster Recovery |
@@ -74,18 +78,22 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 5.34.01 | Privacy en bescherming van persoonsgegevens | IT-Compliance |
 | 5.35.02 | Onafhankelijke beoordeling van informatiebeveiliging | IV-beleid |
 | 5.36.01 | Naleving van beleid, regels en normen voor informatiebeveiliging | IV-beleid |
+| 5.37.01 | Gedocumenteerde bedieningsprocedures | Wijzigingsbeheer |
+| 6.01.01 | Screening | Screening, bewustzijn & opleiding |
 | 6.02.01 | Arbeidsovereenkomst | Screening, bewustzijn & opleiding |
 | 6.03.01 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
 | 6.03.02 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
 | 6.03.03 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
+| 6.03.04 | Bewustwording van, opleiding en training in informatiebeveiliging | Screening, bewustzijn & opleiding |
 | 6.04.01 | Disciplinaire procedure | Screening, bewustzijn & opleiding |
 | 6.05.01 | Verantwoordelijkheden na beëindiging of wijziging van het dienstverband | Screening, bewustzijn & opleiding |
 | 6.06.01 | Vertrouwelijkheids- of geheimhoudingsovereenkomsten | Screening, bewustzijn & opleiding |
 | 6.07.01 | Werken op afstand | Logische toegangsbeveiliging |
 | 6.08.01 | Melden van informatiebeveiligings-gebeurtenissen | Security Incident Management |
-| 7.01.01 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |
 | 7.01.02 | Fysieke beveiligingszones | Fysieke toegang & beveiliging |
 | 7.02.01 | Fysieke toegangsbeveiliging | Fysieke toegang & beveiliging |
+| 7.03.01 | Beveiligen van kantoren, ruimten en faciliteiten | Fysieke toegang & beveiliging |
+| 7.04.01 | Monitoren van de fysieke beveiliging | Fysieke toegang & beveiliging |
 | 7.05.01 | Beschermen tegen fysieke en omgevingsdreigingen | Fysieke toegang & beveiliging |
 | 7.06.01 | Werken in beveiligde zones | Bedrijfsmiddelenbeheer |
 | 7.07.01 | ‘Clear desk’ en ‘clear screen’ | IT-Compliance |
@@ -115,7 +123,6 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.08.03 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
 | 8.08.04 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
 | 8.08.05 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
-| 8.08.06 | Beheer van technische kwetsbaarheden | Vulnerability & patchmanagement |
 | 8.09.01 | Configuratiebeheer | Vulnerability & patchmanagement |
 | 8.10.01 | Wissen van informatie | Afvoer en hergebruik gegevensdragers |
 | 8.11.01 | Maskeren van gegevens | IT-Compliance |
@@ -148,6 +155,9 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.22.01 | Netwerksegmentatie | Netwerkbeveiliging |
 | 8.23.01 | Toepassen van webfilters | Netwerkbeveiliging |
 | 8.24.01 | Gebruik van cryptografie | Cryptografie |
+| 8.24.02 | Gebruik van cryptografie | Cryptografie |
+| 8.24.04 | Gebruik van cryptografie | Cryptografie |
+| 8.24.05 | Gebruik van cryptografie | Cryptografie |
 | 8.25.01 | Beveiligen tijdens de ontwikkelcyclus | Secure Software Development |
 | 8.26.01 | Toepassingsbeveiligingseisen | Secure Software Development |
 | 8.27.01 | Veilige systeemarchitectuur en technische uitgangspunten | Secure Software Development |
@@ -160,16 +170,15 @@ De 148 overheidsmaatregelen van de Baseline Informatiebeveiliging Overheid 2.0, 
 | 8.32.02 | Wijzigingsbeheer | Wijzigingsbeheer |
 | 8.33.01 | Testgegevens | Wijzigingsbeheer |
 | 8.34.01 | Bescherming van informatiesystemen tijdens audits | IT-Compliance |
-| 5.24.08 | Coordinated Vulnerability Disclosure |  |
 
 ## BIO 2.0, beleidsdomeinen (`bio2-domeinen.json`)
 
 Vijftien beleidsdomeinen die de overheidsmaatregelen van BIO 2.0 groeperen naar het beleidsdocument waarin ze thuishoren, van informatiebeveiligingsbeleid tot leveranciersbeheer. Een afgeleide van bio2.json, bedoeld voor wie beleid schrijft of toetst; elk control-id verwijst naar een maatregel daar. Beleidsdomeinen gebaseerd op BIO2 v1.3. Elk domein groepeert de relevante BIO2-controls voor een materie-specifiek beleidsdocument.
 
-- **Bron:** Security Commons NL, afgeleid van BIO 2.0 (CIP), 1.0
+- **Bron:** Security Commons NL, afgeleid van BIO 2.0 (CIP), 1.1
 - **Licentie van de bron:** EUPL-1.2 (de indeling); de maatregelen zelf zijn van het CIP
 - **Opgehaald:** 2026-09-02
-- **Records:** 15 · **Vingerafdruk:** `44c2b7f08a46e013`
+- **Records:** 15 · **Vingerafdruk:** `303dc2a727d1389b`
 
 | Id | Titel |
 |---|---|

@@ -54,7 +54,7 @@ naar de bron; het nummer hier is ook het nummer daar.
 
 | Bestand | Kader | Records | Wat een record draagt |
 |---|---|---|---|
-| `bio2.json` | BIO 2.0 (CIP, v1.3 definitief) | 148 overheidsmaatregelen | nummer (ook het ISO-nummer), titel, thema; geen tekst |
+| `bio2.json` | BIO 2.0 (CIP, v1.3 definitief) | 157 nummers: 117 overheidsmaatregelen, 40 ISO-beheersmaatregelen zonder overheidsmaatregel | nummer (ook het ISO-nummer), titel, thema, soort; geen tekst |
 | `bio2-domeinen.json` | BIO 2.0, beleidsdomeinen | 15 domeinen | id, titel, omschrijving, de maatregelen die in dat beleidsdocument horen |
 | `nist-csf.json` | NIST CSF 2.0 | 106 subcategorieën | id, uitkomst (Engels, zoals NIST hem formuleert), functie en categorie |
 | `wpg.json` | Wpg-toetsingskader (NOREA) | 36 maatregelen | id, titel, artikel, thema, kern in eigen woorden |
@@ -73,7 +73,7 @@ eraan kunt doen, hoe je het aantoont, en wat er nog ontbreekt.
 
 | Bestand | Wat |
 |---|---|
-| [`bio-practices.json`](bio-practices.json) | Per BIO-overheidsmaatregel de practices die het CIP op BIO Practices noemt (102 van de 148, 248 verwijzingen op 26-09-2026). Alleen code en adres, geen tekst |
+| [`bio-practices.json`](bio-practices.json) | Per BIO-overheidsmaatregel de practices die het CIP op BIO Practices noemt (101 van de 157 nummers, 244 verwijzingen; opgehaald 26-09-2026, op 13-10-2026 omgezet naar versie 1.3). Alleen code en adres, geen tekst |
 | [`trefwoorden.json`](trefwoorden.json) | Per maatregel de woorden waarmee de normwijzer stukken uit de kennisbank en het bronnenregister vindt. Vastgesteld door de maintainer (28-09-2026); een treffer is automatisch en staat zo op de pagina |
 | `site/normwijzer-sjabloon.html` | De pagina zelf; de data wordt er bij het bouwen in gezet |
 
