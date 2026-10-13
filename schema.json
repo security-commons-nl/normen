@@ -49,7 +49,8 @@
     "titel": {"type": "string", "minLength": 1},
     "thema": {"type": "string"},
     "artikel": {"type": "string"},
-    "kern": {"type": "string"}
+    "kern": {"type": "string"},
+    "soort": {"enum": ["overheid", "alleen-iso"]}
    },
    "additionalProperties": false
   },

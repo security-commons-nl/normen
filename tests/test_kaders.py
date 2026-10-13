@@ -2,8 +2,8 @@
 
 Een dataset is alleen bruikbaar als hij klopt en als een wijziging opvalt. Deze tests bewaken drie
 dingen: de vorm (het schema), de inhoud (aantallen, unieke ids, geen normtekst van een
-auteursrechthebbende buiten de overheid) en de herkomst (de BIO2-overname is gelijk aan wat op de
-genoemde commit uit cisochat is gehaald). Faalt hier iets, repareer dan de JSON en draai
+auteursrechthebbende buiten de overheid) en de herkomst (BIO2 volgt
+de telling van versie 1.3). Faalt hier iets, repareer dan de JSON en draai
 tools/controleer.py; nooit de test.
 """
 from __future__ import annotations
@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import controleer  # noqa: E402
 
 VERWACHT = {
-    "bio2.json": ("maatregelen", 148),
+    "bio2.json": ("maatregelen", 157),
     "bio2-domeinen.json": ("domeinen", 15),
     "nist-csf.json": ("maatregelen", 106),
     "wpg.json": ("maatregelen", 36),
@@ -31,7 +31,7 @@ VERWACHT = {
 # in het bijzonder: ISO-tekst (NEN/ISO) en de tekst van de overheidsmaatregel (CIP, CC BY-NC-SA)
 # publiceren wij niet.
 VELDEN = {
-    "bio2.json": {"id", "titel", "thema"},
+    "bio2.json": {"id", "titel", "thema", "soort"},
     "nist-csf.json": {"id", "titel", "thema"},
     "wpg.json": {"id", "titel", "artikel", "thema", "kern"},
     "avg.json": {"id", "titel", "artikel", "thema", "kern"},
@@ -105,14 +105,19 @@ def test_bio2_domeinen_verwijzen_naar_bestaande_ids(kaders):
         assert not onbekend, f"{domein['id']}: onbekende controls {onbekend}"
 
 
-def test_bio2_gelijk_aan_overname(kaders):
-    """De overname uit cisochat is de nulmeting. Wijkt bio2.json daarvan af, dan is dat een bewuste
-    wijziging in deze repo en hoort de fixture mee te veranderen, met de reden in de commit."""
-    fixtures = sorted((ROOT / "tests" / "fixtures").glob("cisochat-bio2-*.json"))
-    assert fixtures, "fixture van de overname ontbreekt"
-    nulmeting = json.loads(fixtures[-1].read_text(encoding="utf-8"))
-    assert kaders["bio2.json"]["bron"]["commit"].startswith(nulmeting["commit"][:12])
-    assert kaders["bio2.json"]["maatregelen"] == nulmeting["maatregelen"]
+def test_bio2_volgt_versie_1_3(kaders):
+    """BIO 2.0 versie 1.3 telt in deel 2 117 overheidsmaatregelen en 40 ISO-beheersmaatregelen zonder
+    overheidsmaatregel. Wat in 1.3 vervallen of verplaatst is, staat er niet meer in. Wijkt dit af, dan is
+    de dataset opnieuw gegenereerd uit een andere versie: pas dan deze test aan, met de reden in de commit."""
+    bio2 = kaders["bio2.json"]
+    assert "v1.3" in bio2["versie"]
+    soorten = [m["soort"] for m in bio2["maatregelen"]]
+    assert soorten.count("overheid") == 117 and soorten.count("alleen-iso") == 40
+    ids = {m["id"] for m in bio2["maatregelen"]}
+    for weg in ("5.04.02", "5.04.03", "5.21.01", "5.24.06", "5.25.01", "5.26.01", "5.35.01", "7.01.01",
+                "8.08.06", "8.24.03"):
+        assert weg not in ids, f"{weg} is in versie 1.3 vervallen of verplaatst"
+    assert len({i.rsplit(".", 1)[0] for i in ids}) == 93, "elke ISO 27002-beheersmaatregel heeft een nummer"
 
 
 def test_kaders_md_is_actueel():
