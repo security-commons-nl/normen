@@ -105,6 +105,16 @@ def test_bio2_domeinen_verwijzen_naar_bestaande_ids(kaders):
         assert not onbekend, f"{domein['id']}: onbekende controls {onbekend}"
 
 
+def test_elke_overheidsmaatregel_in_precies_een_domein(kaders):
+    """Wie beleid per domein schrijft, moet erop kunnen rekenen dat geen overheidsmaatregel tussen de domeinen
+    door valt. Maatregelen met alleen ISO 27002 mogen in een domein staan, maar hoeven niet."""
+    overheid = {m["id"] for m in kaders["bio2.json"]["maatregelen"] if m["soort"] == "overheid"}
+    alle = [c for d in kaders["bio2-domeinen.json"]["domeinen"] for c in d["controls"]]
+    dubbel = {c for c in alle if alle.count(c) > 1}
+    assert not dubbel, f"in meer dan een domein: {sorted(dubbel)}"
+    assert not overheid - set(alle), f"in geen domein: {sorted(overheid - set(alle))}"
+
+
 def test_bio2_volgt_versie_1_3(kaders):
     """BIO 2.0 versie 1.3 telt in deel 2 117 overheidsmaatregelen en 40 ISO-beheersmaatregelen zonder
     overheidsmaatregel. Wat in 1.3 vervallen of verplaatst is, staat er niet meer in. Wijkt dit af, dan is
