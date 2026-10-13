@@ -149,6 +149,30 @@ def verzamel() -> dict:
             stukken.append({"titel": titel.group(1).strip(), "url": f"{KB_SITE}/{vak}/{item}/", "wie": "kennisbank",
                             "_samenvatting": vak + " " + volle_samenvatting(kop),
                             "_zoek": norm(titel.group(1) + " " + (samenvatting.group(1) if samenvatting else ""))})
+    # De losse stukken naast een README (een procedure, een brief, een beleidsstuk per domein) alleen in het
+    # zoekvak: wie "wachtwoordbeleid" of "datalek" typt, zoekt dat stuk en niet het item eromheen. Alleen
+    # stukken met een leesversie, anders wijst de treffer naar kale markdown.
+    losse_stukken: list[dict] = []
+    for readme in sorted(kb.glob("*/*/README.md")):
+        vak, item = readme.parent.parent.name, readme.parent.name
+        if vak.startswith((".", "_", "tools")):
+            continue
+        item_titel = re.search(r"^titel:\s*(.+)$", readme.read_text(encoding="utf-8").split("\n---", 1)[0], re.M)
+        for md in sorted(readme.parent.glob("*.md")):
+            if md.name == "README.md" or not md.with_suffix(".html").is_file():
+                continue
+            tekst = md.read_text(encoding="utf-8")
+            if tekst.startswith("---\n"):
+                kop_fm, _, tekst = tekst[4:].partition("\n---")
+            else:
+                kop_fm = ""
+            h1 = re.search(r"^# (.+)$", tekst, re.M)
+            fm_titel = re.search(r"^titel:\s*(.+)$", kop_fm, re.M)
+            titel = (h1 or fm_titel).group(1).strip() if (h1 or fm_titel) else md.stem.replace("-", " ").capitalize()
+            koppen = " ".join(k.strip() for k in re.findall(r"^#{2,3} (.+)$", tekst, re.M))
+            losse_stukken.append({"titel": titel, "url": f"{KB_SITE}/{vak}/{item}/{md.stem}.html", "wie": "kennisbank",
+                                  "_samenvatting": " ".join(x for x in (vak, item_titel.group(1).strip() if item_titel else "",
+                                                                        " ".join(koppen.split()[:60])) if x)})
     for bid, b in register["bronnen"].items():
         if b.get("vervallen"):
             continue
@@ -221,7 +245,7 @@ def verzamel() -> dict:
     # Voor het zoekvak op de voorpagina: kort per regel, zonder de ketens. "z" is extra zoektekst die niet op het
     # scherm staat (samenvatting, zoekwoorden van de partij, trefwoorden van de maatregel).
     zoek_stukken = []
-    for s in stukken:
+    for s in stukken + losse_stukken:
         r = {"t": s["titel"], "u": s["url"], "w": s["wie"]}
         z = " ".join(x for x in (s.get("_samenvatting", ""), s.get("_extra", "")) if x)
         if z:
