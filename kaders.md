@@ -175,10 +175,10 @@ De 157 nummers die in deel 2 van de Baseline Informatiebeveiliging Overheid 2.0 
 
 Vijftien beleidsdomeinen die de overheidsmaatregelen van BIO 2.0 groeperen naar het beleidsdocument waarin ze thuishoren, van informatiebeveiligingsbeleid tot leveranciersbeheer. Een afgeleide van bio2.json, bedoeld voor wie beleid schrijft of toetst; elk control-id verwijst naar een maatregel daar. Beleidsdomeinen gebaseerd op BIO2 v1.3. Elk domein groepeert de relevante BIO2-controls voor een materie-specifiek beleidsdocument.
 
-- **Bron:** Security Commons NL, afgeleid van BIO 2.0 (CIP), 1.1
+- **Bron:** Security Commons NL, afgeleid van BIO 2.0 (CIP), 1.2
 - **Licentie van de bron:** EUPL-1.2 (de indeling); de maatregelen zelf zijn van het CIP
 - **Opgehaald:** 2026-09-02
-- **Records:** 15 · **Vingerafdruk:** `303dc2a727d1389b`
+- **Records:** 15 · **Vingerafdruk:** `bdc633e011a0cb60`
 
 | Id | Titel |
 |---|---|
