@@ -186,7 +186,12 @@ def test_zoekindex_voor_de_voorpagina(data):
     zoekwoorden van de partij vindt "vng beleid" het beleidssjabloon van de IBD niet.
     """
     index = data["_zoekindex"]
-    assert len(index["stukken"]) == len(data["stukken"])
+    # Elk stuk van de normwijzer staat in het zoekvak, en daarnaast de losse stukken van de kennisbank met
+    # een eigen leesversie (een brief, een procedure, een beleidsstuk per domein).
+    assert {s["url"] for s in data["stukken"]} <= {s["u"] for s in index["stukken"]}
+    los = [s for s in index["stukken"] if s["u"].startswith(bouw.KB_SITE) and s["u"].endswith(".html")]
+    assert len(index["stukken"]) == len(data["stukken"]) + len(los)
+    assert all(s["w"] == "kennisbank" and s["t"] for s in los)
     assert len(index["normen"]) == len(data["maatregelen"])
     assert set(index["kaders"]) == {k["id"] for k in bouw.KADERS}
     assert index["synoniemen"], "synoniemen uit het register ontbreken"
