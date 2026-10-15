@@ -7,7 +7,7 @@
 <title>Normwijzer · Security Commons NL</title>
 <meta name="description" content="Per maatregel uit BIO 2.0, NIST CSF 2.0, de AVG en de Wpg: wat de norm vraagt, wat je eraan kunt doen en welk bewijs je dan hebt. En andersom: wat je doet, en welke normen dat raakt.">
 <style>
-:root{--ink:#1a2330;--muted:#5a6675;--line:#d9dee6;--card:#fff;--bg:#f5f7fa;--accent:#1f4e79;--accent2:#1c6b4a;--warm:#7a4b00;--warmbg:#fff4e0}
+:root{--ink:#1a2330;--muted:#5a6675;--line:#d9dee6;--card:#fff;--bg:#f5f7fa;--accent:#154273;--accent2:#1c6b4a;--warm:#7a4b00;--warmbg:#fff4e0}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,'Segoe UI',Arial,sans-serif}
 .wrap{max-width:980px;margin:0 auto;padding:22px 16px 60px}
@@ -65,6 +65,9 @@ h1{font-size:28px;margin:0 0 4px;color:var(--accent)}
 .voet a{color:var(--accent)}
 @media (max-width:620px){.lijst a.rij{flex-wrap:wrap}.badges{justify-content:flex-start;width:100%}}
 @media print{.zoek,.tabs,.hint,.terug{display:none}body{background:#fff}}
+
+/* Huisstijl van de voorpagina op het scherm: kopie van INSTRUMENT_CSS uit kennisbank/tools/huisstijl.py. */
+@media screen{:root{--inkt:#14202b;--blauw:#154273;--blauw-donker:#0d2b4d;--oranje:#e17000;--vlak:#f4f6f9;--lijn:#dde3ea;--grijs:#4b5563;--sans:system-ui,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}body,button,input,select,textarea{font-family:var(--sans)}h1{color:var(--inkt)}html body .kruimel{background:var(--blauw-donker);color:#c9d6e4;margin:0 0 2.8rem;padding-top:1.05rem;padding-bottom:1.05rem;padding-left:max(var(--kruimel-rand,0px),calc((100% - var(--kruimel-breedte,100%))/2));padding-right:max(var(--kruimel-rand,0px),calc((100% - var(--kruimel-breedte,100%))/2));box-shadow:0 0 0 100vmax var(--blauw-donker);clip-path:inset(-100vmax -100vmax 0 -100vmax);font:14px/1.5 var(--sans)}html body .kruimel a{color:#fff;text-decoration:none}html body .kruimel a:hover{text-decoration:underline}html body .kruimel span{color:#c9d6e4}}
 </style>
 </head>
 <body>
